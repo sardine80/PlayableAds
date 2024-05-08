@@ -1,0 +1,1 @@
+{"id":23200,"path":"Assets/Player/Spine/human_type_Controller.controller","assetBundleId":-1,"data":["attack_ranged",0,0,0.5,[["","UnityEngine.GameObject","dummy",[0,28],[]]],[["shot",0,0,"SpineEvent",null,null,0.233300000429153]],true,60,[0,0,0,0,0,0],0,null,[null,null]]}
