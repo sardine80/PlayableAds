@@ -1,10 +1,28 @@
 /**
- * @version 1.0.8894.21272
+ * @version 1.0.8894.23264
  * @copyright anton
  * @compiler Bridge.NET 17.9.40-luna
  */
 Bridge.assembly("UnityScriptsCompiler", function ($asm, globals) {
     "use strict";
+
+    /*enemy start.*/
+    Bridge.define("enemy", {
+        inherits: [UnityEngine.MonoBehaviour],
+        fields: {
+            gm: null
+        },
+        methods: {
+            /*enemy.attack start.*/
+            attack: function () {
+                this.gm.enemyAttack();
+            },
+            /*enemy.attack end.*/
+
+
+        }
+    });
+    /*enemy end.*/
 
     /*gamemanager start.*/
     Bridge.define("gamemanager", {
@@ -12,16 +30,35 @@ Bridge.assembly("UnityScriptsCompiler", function ($asm, globals) {
         fields: {
             sprites: null,
             t: null,
-            tests: null
+            tests: null,
+            playerHpbar: null,
+            dmg: null,
+            hpMax: 0,
+            enemyPower: 0,
+            playerPower: 0,
+            playerPowerMul: 0,
+            endCover: null,
+            curPlayerPower: 0,
+            curdmg: 0,
+            curHp: 0
         },
         ctors: {
             init: function () {
                 this.tests = System.Array.init(2, null, test);
+                this.hpMax = 30;
+                this.enemyPower = 1;
+                this.playerPower = 1;
+                this.playerPowerMul = 2;
             }
         },
         methods: {
             /*gamemanager.Awake start.*/
             Awake: function () {
+                this.endCover.SetActive(false);
+                this.curHp = this.hpMax;
+                this.curdmg = 0;
+                this.curPlayerPower = this.playerPower;
+
                 for (var i = 0; i < this.t.length; i = (i + 1) | 0) {
                     this.t[i].sprite = this.sprites[((Bridge.Int.div(i, 2)) | 0)];
                 }
@@ -67,8 +104,29 @@ Bridge.assembly("UnityScriptsCompiler", function ($asm, globals) {
                 this.tests[1].setClear();
 
                 this.tests[0] = ($t1 = null, this.tests[1] = $t1, $t1);
+
+                this.curPlayerPower = Bridge.Int.mul(this.curPlayerPower, this.playerPowerMul);
             },
             /*gamemanager.Check end.*/
+
+            /*gamemanager.enemyAttack start.*/
+            enemyAttack: function () {
+                this.curHp -= this.enemyPower;
+
+                this.playerHpbar.value = this.curHp / this.hpMax;
+
+                if (this.curHp <= 0) {
+                    this.endCover.SetActive(true);
+                }
+            },
+            /*gamemanager.enemyAttack end.*/
+
+            /*gamemanager.playerAttack start.*/
+            playerAttack: function () {
+                this.curdmg = (this.curdmg + this.curPlayerPower) | 0;
+                this.dmg.text = Bridge.toString(this.curdmg);
+            },
+            /*gamemanager.playerAttack end.*/
 
 
         }
@@ -80,6 +138,24 @@ Bridge.assembly("UnityScriptsCompiler", function ($asm, globals) {
         inherits: [UnityEngine.MonoBehaviour]
     });
     /*IAmAnEmptyScriptJustToMakeCodelessProjectsCompileProperty end.*/
+
+    /*player start.*/
+    Bridge.define("player", {
+        inherits: [UnityEngine.MonoBehaviour],
+        fields: {
+            gm: null
+        },
+        methods: {
+            /*player.hit start.*/
+            hit: function () {
+                this.gm.playerAttack();
+            },
+            /*player.hit end.*/
+
+
+        }
+    });
+    /*player end.*/
 
     /*screen start.*/
     Bridge.define("screen", {
@@ -16864,9 +16940,17 @@ Bridge.rValue(                        c).Initialize(false, quiet);
     var $m = Bridge.setMetadata,
         $n = ["System","UnityEngine.UI","UnityEngine","Spine","Spine.Unity","System.Collections.Generic","UnityEngine.U2D","UnityEngine.Rendering","Spine.Unity.AttachmentTools"];
 
+    /*enemy start.*/
+    $m("enemy", function () { return {"att":1048577,"a":2,"m":[{"a":2,"isSynthetic":true,"n":".ctor","t":1,"sn":"ctor"},{"a":2,"n":"attack","t":8,"sn":"attack","rt":$n[0].Void},{"a":2,"n":"gm","t":4,"rt":gamemanager,"sn":"gm"}]}; }, $n);
+    /*enemy end.*/
+
     /*gamemanager start.*/
-    $m("gamemanager", function () { return {"att":1048577,"a":2,"m":[{"a":2,"isSynthetic":true,"n":".ctor","t":1,"sn":"ctor"},{"a":1,"n":"Awake","t":8,"sn":"Awake","rt":$n[0].Void},{"a":1,"n":"Check","t":8,"sn":"Check","rt":$n[0].Void},{"a":2,"n":"onClickTest","t":8,"pi":[{"n":"t","pt":test,"ps":0}],"sn":"onClickTest","rt":$n[0].Void,"p":[test]},{"a":2,"n":"sprites","t":4,"rt":System.Array.type(UnityEngine.Sprite),"sn":"sprites"},{"a":2,"n":"t","t":4,"rt":System.Array.type(test),"sn":"t"},{"a":2,"n":"tests","t":4,"rt":System.Array.type(test),"sn":"tests"}]}; }, $n);
+    $m("gamemanager", function () { return {"att":1048577,"a":2,"m":[{"a":2,"isSynthetic":true,"n":".ctor","t":1,"sn":"ctor"},{"a":1,"n":"Awake","t":8,"sn":"Awake","rt":$n[0].Void},{"a":1,"n":"Check","t":8,"sn":"Check","rt":$n[0].Void},{"a":2,"n":"enemyAttack","t":8,"sn":"enemyAttack","rt":$n[0].Void},{"a":2,"n":"onClickTest","t":8,"pi":[{"n":"t","pt":test,"ps":0}],"sn":"onClickTest","rt":$n[0].Void,"p":[test]},{"a":2,"n":"playerAttack","t":8,"sn":"playerAttack","rt":$n[0].Void},{"a":1,"n":"curHp","t":4,"rt":$n[0].Single,"sn":"curHp","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"a":2,"n":"curPlayerPower","t":4,"rt":$n[0].Int32,"sn":"curPlayerPower","box":function ($v) { return Bridge.box($v, System.Int32);}},{"a":1,"n":"curdmg","t":4,"rt":$n[0].Int32,"sn":"curdmg","box":function ($v) { return Bridge.box($v, System.Int32);}},{"a":2,"n":"dmg","t":4,"rt":$n[1].Text,"sn":"dmg"},{"a":2,"n":"endCover","t":4,"rt":$n[2].GameObject,"sn":"endCover"},{"a":2,"n":"enemyPower","t":4,"rt":$n[0].Single,"sn":"enemyPower","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"a":2,"n":"hpMax","t":4,"rt":$n[0].Single,"sn":"hpMax","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"a":2,"n":"playerHpbar","t":4,"rt":$n[1].Slider,"sn":"playerHpbar"},{"a":2,"n":"playerPower","t":4,"rt":$n[0].Int32,"sn":"playerPower","box":function ($v) { return Bridge.box($v, System.Int32);}},{"a":2,"n":"playerPowerMul","t":4,"rt":$n[0].Int32,"sn":"playerPowerMul","box":function ($v) { return Bridge.box($v, System.Int32);}},{"a":2,"n":"sprites","t":4,"rt":System.Array.type(UnityEngine.Sprite),"sn":"sprites"},{"a":2,"n":"t","t":4,"rt":System.Array.type(test),"sn":"t"},{"a":2,"n":"tests","t":4,"rt":System.Array.type(test),"sn":"tests"}]}; }, $n);
     /*gamemanager end.*/
+
+    /*player start.*/
+    $m("player", function () { return {"att":1048577,"a":2,"m":[{"a":2,"isSynthetic":true,"n":".ctor","t":1,"sn":"ctor"},{"a":2,"n":"hit","t":8,"sn":"hit","rt":$n[0].Void},{"a":2,"n":"gm","t":4,"rt":gamemanager,"sn":"gm"}]}; }, $n);
+    /*player end.*/
 
     /*screen start.*/
     $m("screen", function () { return {"att":1048577,"a":2,"m":[{"a":2,"isSynthetic":true,"n":".ctor","t":1,"sn":"ctor"},{"a":1,"n":"Awake","t":8,"sn":"Awake","rt":$n[0].Void},{"a":2,"n":"canvas","t":4,"rt":$n[1].CanvasScaler,"sn":"canvas"}]}; }, $n);

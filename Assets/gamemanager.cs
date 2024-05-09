@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using Random = UnityEngine.Random;
 
 public class gamemanager : MonoBehaviour
@@ -10,8 +11,28 @@ public class gamemanager : MonoBehaviour
     public test[] t;
     public test[] tests = new test[2];
 
+    public Slider playerHpbar;
+    public Text dmg;
+
+    public float hpMax=30;
+    public float enemyPower=1;
+
+    public int playerPower = 1;
+    public int playerPowerMul = 2;
+
+    public GameObject endCover;
+    
+    public int curPlayerPower;
+    private int curdmg;
+    private float curHp;
+
     private void Awake()
     {
+        endCover.SetActive(false);
+        curHp = hpMax;
+        curdmg = 0;
+        curPlayerPower = playerPower;
+        
         for (int i = 0; i < t.Length; i++)
         {
             t[i].sprite = sprites[i / 2];
@@ -57,5 +78,23 @@ public class gamemanager : MonoBehaviour
         tests[1].setClear();
 
         tests[0] = tests[1] = null;
+
+        curPlayerPower *= playerPowerMul;
+    }
+
+    public void enemyAttack()
+    {
+        curHp -= enemyPower;
+
+        playerHpbar.value = curHp / hpMax;
+        
+        if(curHp<=0)
+            endCover.SetActive(true);
+    }
+
+    public void playerAttack()
+    {
+        curdmg += curPlayerPower;
+        dmg.text=curdmg.ToString();
     }
 }

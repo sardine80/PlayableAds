@@ -48,6 +48,19 @@ MonoBehaviour:
     keywords:
     - UNITY_UI_ALPHACLIP
     - UNITY_UI_CLIP_RECT
+  - shader: {fileID: 10753, guid: 0000000000000000f000000000000000, type: 0}
+    passType: 0
+    passId: 0
+    subShaderIndex: 0
+    upToDate: 1
+    keywords: []
+  - shader: {fileID: 10753, guid: 0000000000000000f000000000000000, type: 0}
+    passType: 0
+    passId: 0
+    subShaderIndex: 0
+    upToDate: 1
+    keywords:
+    - PIXELSNAP_ON
   - shader: {fileID: 4800000, guid: 45495790b394f894a967dbf44489b57b, type: 3}
     passType: 0
     passId: 0
@@ -108,19 +121,6 @@ MonoBehaviour:
     upToDate: 1
     keywords:
     - _STRAIGHT_ALPHA_INPUT
-  - shader: {fileID: 10753, guid: 0000000000000000f000000000000000, type: 0}
-    passType: 0
-    passId: 0
-    subShaderIndex: 0
-    upToDate: 1
-    keywords: []
-  - shader: {fileID: 10753, guid: 0000000000000000f000000000000000, type: 0}
-    passType: 0
-    passId: 0
-    subShaderIndex: 0
-    upToDate: 1
-    keywords:
-    - PIXELSNAP_ON
   - shader: {fileID: 106, guid: 0000000000000000f000000000000000, type: 0}
     passType: 0
     passId: 0
@@ -159,13 +159,6 @@ MonoBehaviour:
     - _SUNDISK_HIGH_QUALITY
     - _SUNDISK_SIMPLE
   _usedByLunaBuild:
-  - shader: {fileID: 106, guid: 0000000000000000f000000000000000, type: 0}
-    passType: 0
-    passId: 0
-    subShaderIndex: 0
-    upToDate: 0
-    keywords:
-    - _SUNDISK_SIMPLE
   - shader: {fileID: 4800000, guid: 45495790b394f894a967dbf44489b57b, type: 3}
     passType: 0
     passId: 0
@@ -187,7 +180,7 @@ MonoBehaviour:
     keywords: []
   _includedShaderVariants: []
   _excludedShaderVariants: []
-  version: 221
+  version: 279
   _shaderParsedShaders:
   - ParsedSubShaders:
     - Index: 0
@@ -3036,8 +3029,8 @@ MonoBehaviour:
     PointLightCount: 0
     SpotLightCount: 0
     DirectionalLightCount: 0
-    LightmapOn: 0
-    DirlightmapCombined: 0
+    LightmapOn: 1
+    DirlightmapCombined: 1
     DirectionalCookieExists: 0
     PointCookieExists: 0
     SpotCookieExists: 0
