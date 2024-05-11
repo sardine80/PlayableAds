@@ -22,8 +22,8 @@ public class gamemanager : MonoBehaviour
 
     public GameObject endCover;
     
-    public int curPlayerPower;
-    private int curdmg;
+    public long curPlayerPower;
+    private long curdmg;
     private float curHp;
 
     private void Awake()

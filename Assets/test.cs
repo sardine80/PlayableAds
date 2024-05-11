@@ -56,7 +56,7 @@ public class test : MonoBehaviour
         {
             if (isDisable)
             {
-                t.localScale -= x * Time.deltaTime * Vector3.right;
+                t.localScale -= x * Time.deltaTime * Vector3.right * 4f;
                 
                 if (t.localScale.x <= 0 && isChangeSprite == false)
                 {
@@ -77,7 +77,7 @@ public class test : MonoBehaviour
             }
             else
             {
-                t.localScale += x * Time.deltaTime * Vector3.right;
+                t.localScale += x * Time.deltaTime * Vector3.right * 4f;
                 
                 if (t.localScale.x >= 0 && isChangeSprite == false)
                 {
