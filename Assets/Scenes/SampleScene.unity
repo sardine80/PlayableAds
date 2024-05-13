@@ -5700,7 +5700,7 @@ MonoBehaviour:
   playerPower: 2
   playerPowerMul: 15
   attackSpeed: 1
-  attackSpeedMul: 1.5
+  attackSpeedMul: 1.1
   endCover: {fileID: 1998038799}
   curPlayerPower: 0
   ani: {fileID: 1681511599}
