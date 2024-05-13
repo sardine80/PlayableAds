@@ -8,91 +8,83 @@ public class test : MonoBehaviour
 {
     public Image img;
     public Sprite sprite;
+    public GameObject bg;
 
     public float x = 1;
 
     public gamemanager gm;
 
     private Transform t;
-    private bool isRotate;
-    private bool isDisable;
     private bool isClear;
-    private bool isChangeSprite;
+
+    public float scaleChangeTime = 0.35f;
+    private float curScaleChangeTime = 0f;
+
+    private Vector3 prevScale;
+    private bool isChangeScale = false;
+    private Vector3 changeToScale=Vector3.zero;
+    
+    public float clickScale = 1.35f;
+    public float clearScale = 0f;
+    
     private void Awake()
     {
         t = transform;
-        isRotate = false;
-        isDisable = true;
         isClear = false;
-        isChangeSprite = false;
+        isChangeScale = false;
     }
 
     public void setClear()
     {
         isClear = true;
+        curScaleChangeTime = 0;
+        changeToScale = Vector3.one * clearScale;
+        isChangeScale = true;
+        prevScale = t.localScale;
     }
 
     public void setDisable()
     {
-        isRotate = true;
-    }
-
-    public void setEnable()
-    {
-        isRotate = true;
+        bg.SetActive(false);
+        curScaleChangeTime = 0;
+        changeToScale = Vector3.one;
+        isChangeScale = true;
+        prevScale = t.localScale;
     }
 
     public void onClick()
     {
         if (isClear)
             return;
+        if (gm.CanClick == false)
+            return;
+        if (gm.tests[0] == this)
+            return;
         
-        isRotate = true;
+        bg.SetActive(true);   
+        gm.onClickTest(this);
+
+        changeToScale = Vector3.one * clickScale;
+        curScaleChangeTime = 0;
+        prevScale = t.localScale;
+        isChangeScale = true;
     }
 
     private void Update()
     {
-        if (isRotate)
+        if (isChangeScale)
         {
-            if (isDisable)
+            if (curScaleChangeTime < scaleChangeTime)
             {
-                t.localScale -= x * Time.deltaTime * Vector3.right * 4f;
-                
-                if (t.localScale.x <= 0 && isChangeSprite == false)
-                {
-                    isChangeSprite = true;
-                    img.sprite = sprite;
-                }
-
-                if (t.localScale.x<=-1)
-                {
-                    isDisable = false;
-
-                    t.localScale = new Vector3(-1, 1, 1);
-                    isRotate = false;
-                    isChangeSprite = false;
-
-                    gm.onClickTest(this);
-                }
+                curScaleChangeTime += Time.deltaTime;
+                t.localScale = Vector3.Lerp(t.localScale, changeToScale, curScaleChangeTime / scaleChangeTime);
             }
             else
             {
-                t.localScale += x * Time.deltaTime * Vector3.right * 4f;
-                
-                if (t.localScale.x >= 0 && isChangeSprite == false)
-                {
-                    isChangeSprite = true;
-                    img.sprite = null;
-                }
-
-                if (t.localScale.x>=1)
-                {
-                    isDisable = true;
-
-                    t.localScale = Vector3.one;
-                    isRotate = false;
-                    isChangeSprite = false;
-                }
+                gm.EndProc();
+                curScaleChangeTime = 0;
+                t.localScale = changeToScale;
+                isChangeScale = false;
             }
         }
     }

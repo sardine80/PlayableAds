@@ -1,1 +1,0 @@
-{"id":23218,"path":"Assets/Player/Spine/human_type_Controller.controller","assetBundleId":-1,"data":["attack_melee_2",0,1,1,[["","UnityEngine.GameObject","dummy",[0,28],[]]],[["hit",0,0,"SpineEvent",null,null,0.200000002980232],["AniEvent_OnAttack",0,0,"",null,null,0.200000002980232]],true,60,[0,0,0,0,0,0],0,null,[null,null]]}
