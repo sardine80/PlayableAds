@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a6b194f808b1af6499c93410e504af42, type: 3}
+  m_Name: fairy_Atlas
+  m_EditorClassIdentifier: 
+  textureLoadingMode: 0
+  onDemandTextureLoader: {fileID: 0}
+  atlasFile: {fileID: 4900000, guid: 5af7213f66fa4cd40a52af91a69a0a98, type: 3}
+  materials:
+  - {fileID: 2100000, guid: 37b4fc56c13548443a6c14b628b239bd, type: 2}
+  - {fileID: 2100000, guid: bfbe0216b423dc249906b4c5b9be4b14, type: 2}
+  - {fileID: 2100000, guid: 1e8039cd890fa3d479a88096280d2a54, type: 2}
+  - {fileID: 2100000, guid: 861c228a67da1934697c7da38026f54a, type: 2}
+  - {fileID: 2100000, guid: 440c76a1d766e444f98449f8860f13c9, type: 2}
+  - {fileID: 2100000, guid: 5f1f56c8f5a19174a844840138211d29, type: 2}
+  - {fileID: 2100000, guid: 09fa77bcbdc9c8c4e9b505761d1657b6, type: 2}
+  - {fileID: 2100000, guid: f0527b683b3935d4bb75cc4af45915ef, type: 2}
