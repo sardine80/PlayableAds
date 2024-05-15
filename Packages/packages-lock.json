@@ -142,7 +142,7 @@
       "url": "https://packages.unity.com"
     },
     "uk.lunalabs.luna": {
-      "version": "file:../../PlayableAds/5.5.1/scripts",
+      "version": "file:C:/Users/wjddjf80/Downloads/5.5.1/scripts",
       "depth": 0,
       "source": "local",
       "dependencies": {}
