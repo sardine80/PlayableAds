@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 6897994621923331669}
   - component: {fileID: 3282635050435564400}
   - component: {fileID: 2812728384869882370}
+  - component: {fileID: 800976735}
   m_Layer: 0
   m_Name: Pet_086_F
   m_TagString: Untagged
@@ -146,3 +147,16 @@ MonoBehaviour:
     layerMixModes: 01000000
     layerBlendModes: 01000000
   updateTiming: 1
+--- !u!114 &800976735
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7950378170053023005}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a04d832afa61cb4bbd58fe48ababe18, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gm: {fileID: 0}
