@@ -88,3 +88,4 @@ C:\Users\pjh2455191\Documents\pa\5.5.1\pipeline\templates\LunaCompiler\Scripts\o
 C:\Users\pjh2455191\Documents\pa\5.5.1\pipeline\templates\LunaCompiler\Scripts\obj\Debug\Scripts.csproj.Up2Date
 C:\Users\pjh2455191\Documents\pa\5.5.1\pipeline\templates\LunaCompiler\Scripts\obj\Debug\UnityScriptsCompiler.dll
 C:\Users\pjh2455191\Documents\pa\5.5.1\pipeline\templates\LunaCompiler\Scripts\obj\Debug\UnityScriptsCompiler.pdb
+D:\Project_Ads001\5.5.1\pipeline\templates\LunaCompiler\Scripts\obj\Debug\UnityScriptsCompiler.dll

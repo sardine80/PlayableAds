@@ -1,1 +1,0 @@
-{"id":23796,"path":"Assets\/Spine\/Villain\/Skeleton\/co-worker_type_Controller.controller","assetBundleId":-1,"data":["attack_ranged",0,0,0.5,[["","UnityEngine.GameObject","dummy",[0,0,0,0,0,0,0,0.5,0,0,0,0,0,0],[]]],[["AniEvent_OnAttack",0,0,"",null,null,0.100000001490116],["AniEvent_OnEnd",0,0,"",null,null,0.416666656732559]],1,60,[0,0,0,0,0,0],0,[],[[],[]]]}
