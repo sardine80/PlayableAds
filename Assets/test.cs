@@ -26,6 +26,8 @@ public class test : MonoBehaviour
     
     public float clickScale = 1.35f;
     public float clearScale = 0f;
+
+    public int effectIndex=-1;
     
     private void Awake()
     {
@@ -77,7 +79,7 @@ public class test : MonoBehaviour
             if (curScaleChangeTime < scaleChangeTime)
             {
                 curScaleChangeTime += Time.deltaTime;
-                t.localScale = Vector3.Lerp(t.localScale, changeToScale, curScaleChangeTime / scaleChangeTime);
+                t.localScale = Vector3.Slerp(t.localScale, changeToScale, curScaleChangeTime / scaleChangeTime);
             }
             else
             {

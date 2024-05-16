@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.3708985, g: 0.3783704, b: 0.35722548, a: 1}
+  m_IndirectSpecularColor: {r: 0.37311953, g: 0.38074014, b: 0.3587274, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -382,6 +382,7 @@ MonoBehaviour:
   scaleChangeTime: 0.35
   clickScale: 1.2
   clearScale: 0
+  effectIndex: 0
 --- !u!114 &32140248
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -627,6 +628,7 @@ MonoBehaviour:
   scaleChangeTime: 0.35
   clickScale: 1.2
   clearScale: 0
+  effectIndex: 0
 --- !u!114 &66848241
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -692,7 +694,7 @@ RectTransform:
   m_GameObject: {fileID: 75161138}
   m_LocalRotation: {x: 0, y: 0, z: -0.258819, w: 0.9659259}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 186610236}
@@ -858,6 +860,7 @@ MonoBehaviour:
   scaleChangeTime: 0.35
   clickScale: 1.2
   clearScale: 0
+  effectIndex: 0
 --- !u!114 &75194928
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1217,6 +1220,7 @@ MonoBehaviour:
   scaleChangeTime: 0.35
   clickScale: 1.2
   clearScale: 0
+  effectIndex: 0
 --- !u!114 &106007051
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1521,6 +1525,7 @@ RectTransform:
   - {fileID: 1363594263}
   - {fileID: 868696104}
   - {fileID: 75161139}
+  - {fileID: 716267073}
   m_Father: {fileID: 1167878125}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1934,6 +1939,7 @@ MonoBehaviour:
   scaleChangeTime: 0.35
   clickScale: 1.2
   clearScale: 0
+  effectIndex: 0
 --- !u!114 &316283692
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2204,6 +2210,7 @@ MonoBehaviour:
   scaleChangeTime: 0.35
   clickScale: 1.2
   clearScale: 0
+  effectIndex: 0
 --- !u!114 &332195934
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2359,6 +2366,7 @@ MonoBehaviour:
   scaleChangeTime: 0.35
   clickScale: 1.2
   clearScale: 0
+  effectIndex: 0
 --- !u!114 &354756946
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2514,6 +2522,7 @@ MonoBehaviour:
   scaleChangeTime: 0.35
   clickScale: 1.2
   clearScale: 0
+  effectIndex: 0
 --- !u!114 &405808055
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2669,6 +2678,7 @@ MonoBehaviour:
   scaleChangeTime: 0.35
   clickScale: 1.2
   clearScale: 0
+  effectIndex: 0
 --- !u!114 &407341743
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2976,6 +2986,7 @@ MonoBehaviour:
   scaleChangeTime: 0.35
   clickScale: 1.2
   clearScale: 0
+  effectIndex: 0
 --- !u!114 &500168609
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3337,6 +3348,7 @@ MonoBehaviour:
   scaleChangeTime: 0.35
   clickScale: 1.2
   clearScale: 0
+  effectIndex: 0
 --- !u!114 &577519319
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3430,7 +3442,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -708.5}
+  m_AnchoredPosition: {x: 0, y: -452}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &587781483
@@ -3625,6 +3637,7 @@ MonoBehaviour:
   scaleChangeTime: 0.35
   clickScale: 1.2
   clearScale: 0
+  effectIndex: 0
 --- !u!114 &637110616
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3834,6 +3847,42 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
+--- !u!1 &716267072
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 716267073}
+  m_Layer: 5
+  m_Name: CapsuleTarget
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &716267073
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 716267072}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 186610236}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 311, y: 929}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &717304586
 GameObject:
   m_ObjectHideFlags: 0
@@ -4254,6 +4303,7 @@ MonoBehaviour:
   scaleChangeTime: 0.35
   clickScale: 1.2
   clearScale: 0
+  effectIndex: 0
 --- !u!114 &786155970
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5267,6 +5317,7 @@ MonoBehaviour:
   scaleChangeTime: 0.35
   clickScale: 1.2
   clearScale: 0
+  effectIndex: 0
 --- !u!114 &968788602
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5547,6 +5598,7 @@ MonoBehaviour:
   scaleChangeTime: 0.35
   clickScale: 1.2
   clearScale: 0
+  effectIndex: 0
 --- !u!114 &1045705191
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6552,6 +6604,7 @@ MonoBehaviour:
   scaleChangeTime: 0.35
   clickScale: 1.2
   clearScale: 0
+  effectIndex: 0
 --- !u!114 &1288354985
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7272,10 +7325,10 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 86ac9cc34c5bdff4c9df837ee45b9d62, type: 3}
   - {fileID: 21300000, guid: 4e23e4c3fe2be1048bd99d6ef4f31856, type: 3}
   - {fileID: 21300000, guid: 537b2fd30d247e443924304f326152cb, type: 3}
-  - {fileID: 21300000, guid: 835a20dfcfcc0a84684046be49ff6aff, type: 3}
-  - {fileID: 21300000, guid: 5242bf528b2612e4b97ab39893465f12, type: 3}
-  - {fileID: 21300000, guid: 2d59b41d12233d542a319e56b98141ce, type: 3}
-  - {fileID: 21300000, guid: 835a20dfcfcc0a84684046be49ff6aff, type: 3}
+  - {fileID: 21300000, guid: 2be97615fc216864b90a818b38a562bc, type: 3}
+  - {fileID: 21300000, guid: 2be97615fc216864b90a818b38a562bc, type: 3}
+  - {fileID: 21300000, guid: f4c271f17795e9640a0bcf0f91eddc52, type: 3}
+  - {fileID: 21300000, guid: f4c271f17795e9640a0bcf0f91eddc52, type: 3}
   t:
   - {fileID: 1911469134}
   - {fileID: 786155969}
@@ -7301,16 +7354,31 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   playerHpbar: {fileID: 53357479}
+  enemyHpBar: {fileID: 85378909}
   dmg: {fileID: 158191853}
+  enemyHpMax: 20000
   hpMax: 30
   enemyPower: 1
-  playerPower: 2
+  playerPower: 1
   playerPowerMul: 10
   attackSpeed: 1
-  attackSpeedMul: 1.1
+  attackSpeedMul: 1.3
   endCover: {fileID: 1998038799}
+  catchCover: {fileID: 186610235}
   curPlayerPower: 0
   ani: {fileID: 745649537}
+  dmgAni: {fileID: 688982431}
+  pets:
+  - {fileID: 1039193805}
+  - {fileID: 2068907730}
+  - {fileID: 327223642}
+  - {fileID: 1158452462}
+  - {fileID: 1222758605}
+  - {fileID: 1582747101}
+  capsule: {fileID: 75161138}
+  capsuleRotate: 1800
+  capsuleMoveTime: 0.5
+  capsuleTarget: {fileID: 716267072}
 --- !u!4 &1590553497
 Transform:
   m_ObjectHideFlags: 0
@@ -7519,6 +7587,7 @@ MonoBehaviour:
   scaleChangeTime: 0.35
   clickScale: 1.2
   clearScale: 0
+  effectIndex: 0
 --- !u!114 &1721803170
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7715,7 +7784,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1823556854}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1590553496}
+        m_TargetAssemblyTypeName: gamemanager, Assembly-CSharp
+        m_MethodName: OnClickCatchBtn
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1823556854
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7871,6 +7952,7 @@ MonoBehaviour:
   scaleChangeTime: 0.35
   clickScale: 1.2
   clearScale: 0
+  effectIndex: 0
 --- !u!114 &1911207927
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8026,6 +8108,7 @@ MonoBehaviour:
   scaleChangeTime: 0.35
   clickScale: 1.2
   clearScale: 0
+  effectIndex: 0
 --- !u!114 &1911469135
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8745,6 +8828,7 @@ MonoBehaviour:
   scaleChangeTime: 0.35
   clickScale: 1.2
   clearScale: 0
+  effectIndex: 0
 --- !u!114 &2080365950
 MonoBehaviour:
   m_ObjectHideFlags: 0
