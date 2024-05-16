@@ -26,7 +26,7 @@ public class gamemanager : MonoBehaviour
     public float attackSpeedMul = 1.5f;
 
 
-    public GameObject endCover;
+    public endCard endCover;
     public GameObject catchCover;
 
     public long curPlayerPower;
@@ -46,10 +46,22 @@ public class gamemanager : MonoBehaviour
     private float curCapsuleMoveTime=0;
     private Vector3 capsuleOriPos;
     public GameObject capsuleTarget;
+    private int score = 0;
+
+    public GameObject[] breads1;
+    public GameObject[] breads2;
+    public GameObject[] breads3;
+    
+    private int breadIndex_x= 0;
+    private int breadIndex_y= 0;
+
+    private bool gameEnd;
+    public GameObject displayer;
 
     private void Awake()
     {
-        endCover.SetActive(false);
+        gameEnd = false;
+        endCover.gameObject.SetActive(false);
         catchCover.SetActive(false);
         
         capsule.SetActive(false);
@@ -104,7 +116,7 @@ public class gamemanager : MonoBehaviour
             {
                 capsule.transform.position = capsuleTarget.transform.position;
                 capsule.SetActive(false);
-                endCover.SetActive(true);
+                EndGame();
             }
         }
     }
@@ -155,11 +167,13 @@ public class gamemanager : MonoBehaviour
         
         tests[0].setClear();
         tests[1].setClear();
+        score++;
 
         if (tests[0].effectIndex>=6 && tests[0].effectIndex<=7)
         {
             //공격력
-            
+            breadIndex_x++;
+            breadIndex_y = 0;
             curPlayerPower *= playerPowerMul;
             dmg.text=curPlayerPower.ToString();
         }
@@ -184,31 +198,74 @@ public class gamemanager : MonoBehaviour
 
     public void enemyAttack()
     {
+        if (gameEnd)
+            return;
+        
         curHp -= enemyPower;
 
         playerHpbar.value = curHp / hpMax;
 
         if (curHp <= 0)
         {
-            endCover.SetActive(true);
+            EndGame();
         }
     }
 
-    public void EndGame()
+    private void EndGame()
     {
-        // Luna.Unity.LifeCycle.GameEnded();
+        endCover.gameObject.SetActive(true);
+        displayer.SetActive(false);
+        
+        Luna.Unity.Analytics.LogEvent("CardMatch",score);
+        Luna.Unity.Analytics.LogEvent(Luna.Unity.Analytics.EventType.EndCardShown);
+        
+        Luna.Unity.LifeCycle.GameEnded();
+        gameEnd = true;
     }
 
     public void playerAttack()
     {
+        if (gameEnd)
+            return;
+        
         curEnemyHp -= curPlayerPower;
         enemyHpBar.value = curEnemyHp / enemyHpMax;
         
         dmgAni.SetTrigger("Damage");
-        
+
+        if (breadIndex_x == 0)
+        {
+            if (breads1[breadIndex_y].activeSelf)
+                return;
+            
+            breads1[breadIndex_y].SetActive(true);
+            breadIndex_y++;
+            if (breadIndex_y >= breads1.Length)
+                breadIndex_y = 0;
+        }
+        else if (breadIndex_x == 1)
+        {
+            if (breads2[breadIndex_y].activeSelf)
+                return;
+            
+            breads2[breadIndex_y].SetActive(true);
+            breadIndex_y++;
+            if (breadIndex_y >= breads2.Length)
+                breadIndex_y = 0;
+        }
+        else
+        {
+            if (breads3[breadIndex_y].activeSelf)
+                return;
+            
+            breads3[breadIndex_y].SetActive(true);
+            breadIndex_y++;
+            if (breadIndex_y >= breads3.Length)
+                breadIndex_y = 0;
+        }
+
         if(curEnemyHp<=0)
             catchCover.SetActive(true);
-        // curdmg += curPlayerPower;
         
     }
 }

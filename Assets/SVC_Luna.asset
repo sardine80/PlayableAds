@@ -48,19 +48,34 @@ MonoBehaviour:
     keywords:
     - UNITY_UI_ALPHACLIP
     - UNITY_UI_CLIP_RECT
-  - shader: {fileID: 10753, guid: 0000000000000000f000000000000000, type: 0}
+  - shader: {fileID: 4800000, guid: fa95b0fb6983c0f40a152e6f9aa82bfb, type: 3}
     passType: 0
     passId: 0
     subShaderIndex: 0
     upToDate: 1
     keywords: []
-  - shader: {fileID: 10753, guid: 0000000000000000f000000000000000, type: 0}
+  - shader: {fileID: 4800000, guid: fa95b0fb6983c0f40a152e6f9aa82bfb, type: 3}
     passType: 0
     passId: 0
     subShaderIndex: 0
     upToDate: 1
     keywords:
-    - PIXELSNAP_ON
+    - _STRAIGHT_ALPHA_INPUT
+  - shader: {fileID: 4800000, guid: fa95b0fb6983c0f40a152e6f9aa82bfb, type: 3}
+    passType: 0
+    passId: 0
+    subShaderIndex: 0
+    upToDate: 1
+    keywords:
+    - UNITY_UI_ALPHACLIP
+  - shader: {fileID: 4800000, guid: fa95b0fb6983c0f40a152e6f9aa82bfb, type: 3}
+    passType: 0
+    passId: 0
+    subShaderIndex: 0
+    upToDate: 1
+    keywords:
+    - UNITY_UI_ALPHACLIP
+    - _STRAIGHT_ALPHA_INPUT
   - shader: {fileID: 4800000, guid: 45495790b394f894a967dbf44489b57b, type: 3}
     passType: 0
     passId: 0
@@ -108,34 +123,6 @@ MonoBehaviour:
     subShaderIndex: 0
     upToDate: 1
     keywords: []
-  - shader: {fileID: 4800000, guid: fa95b0fb6983c0f40a152e6f9aa82bfb, type: 3}
-    passType: 0
-    passId: 0
-    subShaderIndex: 0
-    upToDate: 1
-    keywords: []
-  - shader: {fileID: 4800000, guid: fa95b0fb6983c0f40a152e6f9aa82bfb, type: 3}
-    passType: 0
-    passId: 0
-    subShaderIndex: 0
-    upToDate: 1
-    keywords:
-    - _STRAIGHT_ALPHA_INPUT
-  - shader: {fileID: 4800000, guid: fa95b0fb6983c0f40a152e6f9aa82bfb, type: 3}
-    passType: 0
-    passId: 0
-    subShaderIndex: 0
-    upToDate: 1
-    keywords:
-    - UNITY_UI_ALPHACLIP
-  - shader: {fileID: 4800000, guid: fa95b0fb6983c0f40a152e6f9aa82bfb, type: 3}
-    passType: 0
-    passId: 0
-    subShaderIndex: 0
-    upToDate: 1
-    keywords:
-    - UNITY_UI_ALPHACLIP
-    - _STRAIGHT_ALPHA_INPUT
   - shader: {fileID: 4800000, guid: a1e4ab34b07f81e4e94f0d241c416669, type: 3}
     passType: 0
     passId: 0
@@ -175,6 +162,56 @@ MonoBehaviour:
     upToDate: 1
     keywords:
     - UNITY_UI_ALPHACLIP
+  - shader: {fileID: 10753, guid: 0000000000000000f000000000000000, type: 0}
+    passType: 0
+    passId: 0
+    subShaderIndex: 0
+    upToDate: 1
+    keywords: []
+  - shader: {fileID: 10753, guid: 0000000000000000f000000000000000, type: 0}
+    passType: 0
+    passId: 0
+    subShaderIndex: 0
+    upToDate: 1
+    keywords:
+    - PIXELSNAP_ON
+  - shader: {fileID: 106, guid: 0000000000000000f000000000000000, type: 0}
+    passType: 0
+    passId: 0
+    subShaderIndex: 0
+    upToDate: 1
+    keywords:
+    - _SUNDISK_NONE
+  - shader: {fileID: 106, guid: 0000000000000000f000000000000000, type: 0}
+    passType: 0
+    passId: 0
+    subShaderIndex: 0
+    upToDate: 1
+    keywords:
+    - _SUNDISK_SIMPLE
+  - shader: {fileID: 106, guid: 0000000000000000f000000000000000, type: 0}
+    passType: 0
+    passId: 0
+    subShaderIndex: 0
+    upToDate: 1
+    keywords:
+    - _SUNDISK_HIGH_QUALITY
+  - shader: {fileID: 106, guid: 0000000000000000f000000000000000, type: 0}
+    passType: 0
+    passId: 0
+    subShaderIndex: 0
+    upToDate: 1
+    keywords:
+    - _SUNDISK_NONE
+    - _SUNDISK_SIMPLE
+  - shader: {fileID: 106, guid: 0000000000000000f000000000000000, type: 0}
+    passType: 0
+    passId: 0
+    subShaderIndex: 0
+    upToDate: 1
+    keywords:
+    - _SUNDISK_HIGH_QUALITY
+    - _SUNDISK_SIMPLE
   - shader: {fileID: 4800000, guid: ffa154cdf7436c84fbf91c517d221812, type: 3}
     passType: 0
     passId: 0
@@ -187,43 +224,6 @@ MonoBehaviour:
     subShaderIndex: 0
     upToDate: 1
     keywords: []
-  - shader: {fileID: 106, guid: 0000000000000000f000000000000000, type: 0}
-    passType: 0
-    passId: 0
-    subShaderIndex: 0
-    upToDate: 1
-    keywords:
-    - _SUNDISK_NONE
-  - shader: {fileID: 106, guid: 0000000000000000f000000000000000, type: 0}
-    passType: 0
-    passId: 0
-    subShaderIndex: 0
-    upToDate: 1
-    keywords:
-    - _SUNDISK_SIMPLE
-  - shader: {fileID: 106, guid: 0000000000000000f000000000000000, type: 0}
-    passType: 0
-    passId: 0
-    subShaderIndex: 0
-    upToDate: 1
-    keywords:
-    - _SUNDISK_HIGH_QUALITY
-  - shader: {fileID: 106, guid: 0000000000000000f000000000000000, type: 0}
-    passType: 0
-    passId: 0
-    subShaderIndex: 0
-    upToDate: 1
-    keywords:
-    - _SUNDISK_NONE
-    - _SUNDISK_SIMPLE
-  - shader: {fileID: 106, guid: 0000000000000000f000000000000000, type: 0}
-    passType: 0
-    passId: 0
-    subShaderIndex: 0
-    upToDate: 1
-    keywords:
-    - _SUNDISK_HIGH_QUALITY
-    - _SUNDISK_SIMPLE
   _usedByLunaBuild:
   - shader: {fileID: 4800000, guid: 45495790b394f894a967dbf44489b57b, type: 3}
     passType: 0
@@ -253,7 +253,7 @@ MonoBehaviour:
     - _STRAIGHT_ALPHA_INPUT
   _includedShaderVariants: []
   _excludedShaderVariants: []
-  version: 79
+  version: 134
   _shaderParsedShaders:
   - ParsedSubShaders:
     - Index: 0

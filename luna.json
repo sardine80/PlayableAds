@@ -8249,6 +8249,38 @@
             {
                 "name": "Spine.Unity.ISkeletonComponent",
                 "excluded": false
+            },
+            {
+                "name": "EndCardController",
+                "excluded": true
+            },
+            {
+                "name": "EndCardSetScale",
+                "excluded": true
+            },
+            {
+                "name": "ExampleEndCardCallScript",
+                "excluded": true
+            },
+            {
+                "name": "ButtonAnimationType",
+                "excluded": true
+            },
+            {
+                "name": "EndCardClickableOptionsType",
+                "excluded": true
+            },
+            {
+                "name": "EndCardLandscapeAnimationType",
+                "excluded": true
+            },
+            {
+                "name": "EndCardPortraitAnimationType",
+                "excluded": true
+            },
+            {
+                "name": "ScreenOrientationType",
+                "excluded": true
             }
         ],
         "unusedMethods": [
@@ -24240,7 +24272,7 @@
                     },
                     {
                         "name": "interactable#get",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "interactable#set",
@@ -28475,7 +28507,7 @@
                 "staticMethods": [],
                 "instanceMethods": [
                     {
-                        "name": "EndGame",
+                        "name": "OnClickDownload",
                         "excluded": false
                     }
                 ]
@@ -28864,6 +28896,20 @@
                     },
                     {
                         "name": "LateUpdate",
+                        "excluded": false
+                    }
+                ]
+            },
+            {
+                "className": "bread",
+                "staticMethods": [],
+                "instanceMethods": [
+                    {
+                        "name": "OnEnable",
+                        "excluded": false
+                    },
+                    {
+                        "name": "Update",
                         "excluded": false
                     }
                 ]

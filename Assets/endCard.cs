@@ -5,8 +5,8 @@ using UnityEngine;
 public class endCard : MonoBehaviour
 {
     public gamemanager gm;
-    public void EndGame()
+    public void OnClickDownload()
     {
-        gm.EndGame();
+        Luna.Unity.Playable.InstallFullGame();
     }
 }

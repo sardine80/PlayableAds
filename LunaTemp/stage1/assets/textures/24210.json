@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 {"id":24210,"type":0,"path":"Assets\/Spine\/Villain\/Texture\/co-worker_type_20.png","assetBundleId":-1,"data":["co-worker_type_20",512,512,1,1,1,0,12,0,0,1]}
+=======
+{"id":24210,"type":0,"path":"Assets\/Source\/Texture\/BG_Airship_01.jpg","assetBundleId":-1,"data":["BG_Airship_01",512,512,1,1,1,0,10,1,1,1]}
+>>>>>>> 022d62e (업뎃)
