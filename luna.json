@@ -1,7 +1,7 @@
 {
     "version": "5.5.1",
     "projectId": "d08185603789a054f9d0715e979963e1",
-    "applicationID": 0,
+    "applicationID": 21917,
     "creativeName": "test",
     "pgServer": "EU",
     "window": {
@@ -50,13 +50,13 @@
                 "Stubs/MoreMountains.NiceVibrations"
             ],
             "msbuildMac64": "/Library/Frameworks/Mono.framework/Versions/Current/bin/msbuild",
-            "msbuildWin64": "C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\MSBuild\\Current\\Bin\\MSBuild.exe",
+            "msbuildWin64": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\MSBuild.exe",
             "externalSources": [],
             "externalJSLibraries": [],
             "scriptingDefines": [],
-            "msbuildVersion": "16.11",
+            "msbuildVersion": "17.9",
             "monoVersion": "N/A",
-            "dotnetVersion": "7.0.14"
+            "dotnetVersion": "8.0.204"
         },
         "assets": {
             "export": [],
@@ -102,6 +102,10 @@
                 "Assets/Spine/Runtime/spine-unity/Components/Internal/SkeletonSubmeshGraphic.cs",
                 "Assets/Spine/Runtime/spine-unity/Components/SkeletonGraphic.cs",
                 "Assets/Spine/Runtime/spine-unity/Materials/SkeletonGraphicDefault.mat",
+                "Assets/DS_Particles_UvMaskAniEffect_Add (UI).mat",
+                "Assets/DS_Particles_UvMaskAniEffect_Add_Stencil (UI).mat",
+                "Assets/UvMaskAniEffect_Add_UI.shader",
+                "Assets/UvMaskAniEffect_Add_UI_Stencil.shader",
                 "Assets/Resources/DOTweenSettings.asset"
             ]
         },
@@ -171,8 +175,8 @@
             },
             {
                 "name": "prefabs",
-                "excluded": true,
-                "forceIncluded": false
+                "excluded": false,
+                "forceIncluded": true
             },
             {
                 "name": "mecanim-wasm",
@@ -1471,14 +1475,6 @@
                 "excluded": true
             },
             {
-                "name": "UnityEngine.AnimationState",
-                "excluded": true
-            },
-            {
-                "name": "UnityEngine.AnimatorTransitionInfo",
-                "excluded": true
-            },
-            {
                 "name": "UnityEngine.Assertions.Assert",
                 "excluded": true
             },
@@ -1943,10 +1939,6 @@
                 "excluded": true
             },
             {
-                "name": "UnityEngine.AnimatorTransitionInfo.NoTransitionInfo",
-                "excluded": true
-            },
-            {
                 "name": "UnityEngine.AssetBundleManifest",
                 "excluded": true
             },
@@ -2236,10 +2228,6 @@
             },
             {
                 "name": "Luna.Unity.DTO.UnityEngine.Components.TrailRenderer",
-                "excluded": true
-            },
-            {
-                "name": "UnityEngine.Animation",
                 "excluded": true
             },
             {
@@ -3204,7 +3192,7 @@
             },
             {
                 "name": "UnityEngine.AnimationState.FadeType",
-                "excluded": true
+                "excluded": false
             },
             {
                 "name": "UnityEngine.AnimatorCullingMode",
@@ -4780,7 +4768,7 @@
             },
             {
                 "name": "UnityEngine.Space",
-                "excluded": true
+                "excluded": false
             },
             {
                 "name": "UnityEngine.SpriteAlignment",
@@ -5967,10 +5955,6 @@
                 "excluded": true
             },
             {
-                "name": "UnityEngine.UI.LayoutUtility",
-                "excluded": true
-            },
-            {
                 "name": "UnityEngine.UI.Misc",
                 "excluded": true
             },
@@ -6012,10 +5996,6 @@
             },
             {
                 "name": "UnityEngine.EventSystems.PhysicsRaycaster",
-                "excluded": true
-            },
-            {
-                "name": "UnityEngine.UI.ContentSizeFitter",
                 "excluded": true
             },
             {
@@ -6100,7 +6080,7 @@
             },
             {
                 "name": "UnityEngine.UI.ContentSizeFitter.FitMode",
-                "excluded": true
+                "excluded": false
             },
             {
                 "name": "UnityEngine.UI.CoroutineTween.ITweenValue",
@@ -6951,14 +6931,6 @@
                 "excluded": true
             },
             {
-                "name": "Spine.Unity.BoneFollower",
-                "excluded": true
-            },
-            {
-                "name": "Spine.Unity.BoneFollowerGraphic",
-                "excluded": true
-            },
-            {
                 "name": "Spine.Unity.BoundingBoxFollower",
                 "excluded": true
             },
@@ -7136,7 +7108,7 @@
             },
             {
                 "name": "Spine.Unity.BoneFollower.AxisOrientation",
-                "excluded": true
+                "excluded": false
             },
             {
                 "name": "Spine.Unity.SettingsTriState",
@@ -13514,7 +13486,7 @@
                     },
                     {
                         "name": "$ctor1",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "ctor",
@@ -14990,7 +14962,7 @@
                     },
                     {
                         "name": "OnStateExit",
-                        "excluded": true
+                        "excluded": false
                     }
                 ]
             },
@@ -16912,7 +16884,7 @@
                     },
                     {
                         "name": "CheckTransitionExitTimeCondition",
-                        "excluded": true
+                        "excluded": false
                     }
                 ]
             },
@@ -17360,7 +17332,7 @@
                     },
                     {
                         "name": "PullOrphanEvents",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "Sample",
@@ -18172,11 +18144,11 @@
                     },
                     {
                         "name": "position#get",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "position#set",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "localScale#get",
@@ -18188,7 +18160,7 @@
                     },
                     {
                         "name": "lossyScale#get",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "localEulerAngles#get",
@@ -18220,7 +18192,7 @@
                     },
                     {
                         "name": "rotation#set",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "forward#get",
@@ -18328,7 +18300,7 @@
                     },
                     {
                         "name": "TransformPoint$1",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "TransformPoint",
@@ -18364,7 +18336,7 @@
                     },
                     {
                         "name": "Rotate$2",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "RotateAround",
@@ -18436,7 +18408,7 @@
                     },
                     {
                         "name": "SetPositionAndRotation",
-                        "excluded": true
+                        "excluded": false
                     }
                 ]
             },
@@ -19446,11 +19418,11 @@
                     },
                     {
                         "name": "SetSizeWithCurrentAnchors",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "GetParentSize",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "GetWorldCorners",
@@ -19710,7 +19682,7 @@
                     },
                     {
                         "name": "SetTrigger$1",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "SetTrigger",
@@ -21014,7 +20986,7 @@
                     },
                     {
                         "name": "overrideSprite#set",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "activeSprite#get",
@@ -21450,7 +21422,7 @@
                     },
                     {
                         "name": "OnDisable",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "ApplyFontDataChanges",
@@ -21466,7 +21438,7 @@
                     },
                     {
                         "name": "OnDidApplyAnimationProperties",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "OnRectTransformDimensionsChange",
@@ -22742,7 +22714,7 @@
                     },
                     {
                         "name": "BuildMeshWithArrays",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "ScaleVertexData",
@@ -23378,7 +23350,7 @@
                     },
                     {
                         "name": "OnDisable",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "OnDestroy",
@@ -24304,7 +24276,7 @@
                     },
                     {
                         "name": "OnDisable",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "AddCanvasGroup",
@@ -24312,7 +24284,7 @@
                     },
                     {
                         "name": "RemoveCanvasGroup",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "OnDidApplyAnimationProperties",
@@ -25016,11 +24988,11 @@
                     },
                     {
                         "name": "minWidth#get",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "preferredWidth#get",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "flexibleWidth#get",
@@ -25028,11 +25000,11 @@
                     },
                     {
                         "name": "minHeight#get",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "preferredHeight#get",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "flexibleHeight#get",
@@ -25092,11 +25064,11 @@
                     },
                     {
                         "name": "GetTotalMinSize",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "GetTotalPreferredSize",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "GetTotalFlexibleSize",
@@ -25290,6 +25262,14 @@
                     },
                     {
                         "name": "EndGame",
+                        "excluded": false
+                    },
+                    {
+                        "name": "Update",
+                        "excluded": false
+                    },
+                    {
+                        "name": "OnClickCatchBtn",
                         "excluded": false
                     }
                 ]
@@ -27788,7 +27768,7 @@
                     },
                     {
                         "name": "OnDisable",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "OnEnable",
@@ -27826,7 +27806,7 @@
                     },
                     {
                         "name": "MeshScale#get",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "UpdateMode#get",
@@ -27862,7 +27842,7 @@
                     },
                     {
                         "name": "Skeleton#get",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "Skeleton#set",
@@ -27942,7 +27922,7 @@
                     },
                     {
                         "name": "OnDisable",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "Update",
@@ -28496,6 +28476,394 @@
                 "instanceMethods": [
                     {
                         "name": "EndGame",
+                        "excluded": false
+                    }
+                ]
+            },
+            {
+                "className": "UnityEngine.AnimationState",
+                "staticMethods": [],
+                "instanceMethods": [
+                    {
+                        "name": "length#get",
+                        "excluded": false
+                    },
+                    {
+                        "name": "name#get",
+                        "excluded": true
+                    },
+                    {
+                        "name": "name#set",
+                        "excluded": true
+                    },
+                    {
+                        "name": "init",
+                        "excluded": false
+                    },
+                    {
+                        "name": "ctor",
+                        "excluded": true
+                    },
+                    {
+                        "name": "$ctor1",
+                        "excluded": false
+                    },
+                    {
+                        "name": "AddTime",
+                        "excluded": false
+                    },
+                    {
+                        "name": "Rewind",
+                        "excluded": false
+                    },
+                    {
+                        "name": "Stoped",
+                        "excluded": false
+                    },
+                    {
+                        "name": "Fade",
+                        "excluded": true
+                    }
+                ]
+            },
+            {
+                "className": "UnityEngine.AnimatorTransitionInfo",
+                "staticMethods": [],
+                "instanceMethods": [
+                    {
+                        "name": "init",
+                        "excluded": false
+                    },
+                    {
+                        "name": "FromAlpha#get",
+                        "excluded": false
+                    },
+                    {
+                        "name": "ToAlpha#get",
+                        "excluded": false
+                    },
+                    {
+                        "name": "Complete#get",
+                        "excluded": false
+                    },
+                    {
+                        "name": "Pending#get",
+                        "excluded": false
+                    },
+                    {
+                        "name": "$ctor1",
+                        "excluded": false
+                    },
+                    {
+                        "name": "ctor",
+                        "excluded": false
+                    },
+                    {
+                        "name": "AddTime",
+                        "excluded": false
+                    },
+                    {
+                        "name": "IsName",
+                        "excluded": true
+                    }
+                ]
+            },
+            {
+                "className": "UnityEngine.AnimatorTransitionInfo.NoTransitionInfo",
+                "staticMethods": [],
+                "instanceMethods": [
+                    {
+                        "name": "IsName",
+                        "excluded": true
+                    }
+                ]
+            },
+            {
+                "className": "UnityEngine.Animation",
+                "staticMethods": [],
+                "instanceMethods": [
+                    {
+                        "name": "clip#get",
+                        "excluded": false
+                    },
+                    {
+                        "name": "clip#set",
+                        "excluded": false
+                    },
+                    {
+                        "name": "clips#get",
+                        "excluded": true
+                    },
+                    {
+                        "name": "clips#set",
+                        "excluded": false
+                    },
+                    {
+                        "name": "wrapMode#get",
+                        "excluded": false
+                    },
+                    {
+                        "name": "wrapMode#set",
+                        "excluded": false
+                    },
+                    {
+                        "name": "init",
+                        "excluded": false
+                    },
+                    {
+                        "name": "ctor",
+                        "excluded": false
+                    },
+                    {
+                        "name": "getItem",
+                        "excluded": true
+                    },
+                    {
+                        "name": "IsPlaying",
+                        "excluded": true
+                    },
+                    {
+                        "name": "GetEnumerator",
+                        "excluded": true
+                    },
+                    {
+                        "name": "AddClip",
+                        "excluded": true
+                    },
+                    {
+                        "name": "Play",
+                        "excluded": false
+                    },
+                    {
+                        "name": "Play$1",
+                        "excluded": true
+                    },
+                    {
+                        "name": "UpdateClipWrapMode",
+                        "excluded": false
+                    },
+                    {
+                        "name": "Stop",
+                        "excluded": false
+                    },
+                    {
+                        "name": "Stop$1",
+                        "excluded": true
+                    },
+                    {
+                        "name": "Rewind",
+                        "excluded": false
+                    },
+                    {
+                        "name": "AddTime",
+                        "excluded": false
+                    },
+                    {
+                        "name": "TriggerEvents",
+                        "excluded": false
+                    },
+                    {
+                        "name": "Update",
+                        "excluded": true
+                    },
+                    {
+                        "name": "Sample",
+                        "excluded": false
+                    },
+                    {
+                        "name": "OnEnable",
+                        "excluded": false
+                    },
+                    {
+                        "name": "CrossFade",
+                        "excluded": true
+                    }
+                ]
+            },
+            {
+                "className": "UnityEngine.UI.LayoutUtility",
+                "staticMethods": [],
+                "instanceMethods": [
+                    {
+                        "name": "GetMinSize",
+                        "excluded": true
+                    },
+                    {
+                        "name": "GetPreferredSize",
+                        "excluded": false
+                    },
+                    {
+                        "name": "GetFlexibleSize",
+                        "excluded": true
+                    },
+                    {
+                        "name": "GetMinWidth",
+                        "excluded": true
+                    },
+                    {
+                        "name": "GetPreferredWidth",
+                        "excluded": true
+                    },
+                    {
+                        "name": "GetFlexibleWidth",
+                        "excluded": true
+                    },
+                    {
+                        "name": "GetMinHeight",
+                        "excluded": true
+                    },
+                    {
+                        "name": "GetPreferredHeight",
+                        "excluded": true
+                    },
+                    {
+                        "name": "GetFlexibleHeight",
+                        "excluded": true
+                    },
+                    {
+                        "name": "GetLayoutProperty",
+                        "excluded": true
+                    },
+                    {
+                        "name": "GetLayoutProperty$1",
+                        "excluded": true
+                    }
+                ]
+            },
+            {
+                "className": "UnityEngine.UI.ContentSizeFitter",
+                "staticMethods": [],
+                "instanceMethods": [
+                    {
+                        "name": "horizontalFit#get",
+                        "excluded": false
+                    },
+                    {
+                        "name": "horizontalFit#set",
+                        "excluded": true
+                    },
+                    {
+                        "name": "verticalFit#get",
+                        "excluded": false
+                    },
+                    {
+                        "name": "verticalFit#set",
+                        "excluded": true
+                    },
+                    {
+                        "name": "rectTransform#get",
+                        "excluded": false
+                    },
+                    {
+                        "name": "init",
+                        "excluded": false
+                    },
+                    {
+                        "name": "ctor",
+                        "excluded": false
+                    },
+                    {
+                        "name": "OnEnable",
+                        "excluded": false
+                    },
+                    {
+                        "name": "OnDisable",
+                        "excluded": true
+                    },
+                    {
+                        "name": "OnRectTransformDimensionsChange",
+                        "excluded": true
+                    },
+                    {
+                        "name": "HandleSelfFittingAlongAxis",
+                        "excluded": false
+                    },
+                    {
+                        "name": "SetLayoutHorizontal",
+                        "excluded": false
+                    },
+                    {
+                        "name": "SetLayoutVertical",
+                        "excluded": false
+                    },
+                    {
+                        "name": "SetDirty",
+                        "excluded": false
+                    }
+                ]
+            },
+            {
+                "className": "Spine.Unity.BoneFollower",
+                "staticMethods": [],
+                "instanceMethods": [
+                    {
+                        "name": "SkeletonRenderer#get",
+                        "excluded": true
+                    },
+                    {
+                        "name": "SkeletonRenderer#set",
+                        "excluded": true
+                    },
+                    {
+                        "name": "init",
+                        "excluded": true
+                    },
+                    {
+                        "name": "SetBone",
+                        "excluded": true
+                    },
+                    {
+                        "name": "Awake",
+                        "excluded": true
+                    },
+                    {
+                        "name": "HandleRebuildRenderer",
+                        "excluded": true
+                    },
+                    {
+                        "name": "Initialize",
+                        "excluded": true
+                    },
+                    {
+                        "name": "OnDestroy",
+                        "excluded": true
+                    },
+                    {
+                        "name": "LateUpdate",
+                        "excluded": true
+                    }
+                ]
+            },
+            {
+                "className": "Spine.Unity.BoneFollowerGraphic",
+                "staticMethods": [],
+                "instanceMethods": [
+                    {
+                        "name": "SkeletonGraphic#get",
+                        "excluded": true
+                    },
+                    {
+                        "name": "SkeletonGraphic#set",
+                        "excluded": true
+                    },
+                    {
+                        "name": "init",
+                        "excluded": false
+                    },
+                    {
+                        "name": "SetBone",
+                        "excluded": true
+                    },
+                    {
+                        "name": "Awake",
+                        "excluded": false
+                    },
+                    {
+                        "name": "Initialize",
+                        "excluded": false
+                    },
+                    {
+                        "name": "LateUpdate",
                         "excluded": false
                     }
                 ]

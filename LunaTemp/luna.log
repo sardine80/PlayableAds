@@ -1,149 +1,161 @@
+report@config:load 21.21
 Authorized using stored user info.
+report@account:authorize 3.75
 stderr: 'rm'��(��) ���� �Ǵ� �ܺ� ����, ������ �� �ִ� ���α׷�, �Ǵ�
 ��ġ ������ �ƴմϴ�.
 
-Exporting assets from Unity.....
+Exporting assets from Unity......
 
 [ Stage1 ] Assets exported from Unity and staged for further processing
-Using C:/Windows/Fonts/arial.ttf file to generate an atlas for Arial[588] font
+report@unity:export 3050.29
+report@config:load 8.34
+Using C:/Windows/Fonts/arial.ttf file to generate an atlas for Arial[592] font
   Using alphabet  §1234567890-=qwertyuiop[]asdfghjkl;'\`zxcvbnm,./±!@#$%^&*()_+QWERTYUIOP{}ASDFGHJKL:"|~ZXCVBNM<>?
-Combined 97 glyphs into bitmap texture at C:/Users/pjh2455191/Documents/pa/LunaTemp/stage1/tmp/fonts/Arial-588/output_0.png (59kb)
+Combined 97 glyphs into bitmap texture at C:/Users/pjh2455191/Documents/pa/LunaTemp/stage1/tmp/fonts/Arial-592/output_0.png (59kb)
 Resources:
 {}
+report@assets:stage2 2575.40
+report@assets:stage3 140.97
 [ Stage2 ] Assets postprocessed and bundled successfully
+report@config:unity 0.10
+report@config:load 19.98
+report@config:unity 0.06
+report@code:compose 48.02
 Authorized using stored user info.
+report@account:authorize 1.81
 msbuild ���� 17.9.8+b34f75857(.NET Framework��)
 
-���� ����: 2024-05-13 ���� 10:20:08
+���� ����: 2024-05-16 ���� 10:06:40
 
 
 
-1 ����� "C:\Users\pjh2455191\Documents\PlayableAds\5.5.1\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj" ������Ʈ(Rebuild ���)�Դϴ�.
-
+1 ����� "C:\Users\pjh2455191\Documents\pa\5.5.1\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj" ������Ʈ(Rebuild ���)�Դϴ�.
 CoreClean:
-  "C:\Users\pjh2455191\Documents\PlayableAds\5.5.1\pipeline\templates\LunaCompiler\Scripts\bin\Debug\UnityScriptsCompiler.dll" ������ �����ϰ� �ֽ��ϴ�.
+  "C:\Users\pjh2455191\Documents\pa\5.5.1\pipeline\templates\LunaCompiler\Scripts\bin\Debug\UnityScriptsCompiler.dll" ������ �����ϰ� �ֽ��ϴ�.
 
-  "C:\Users\pjh2455191\Documents\PlayableAds\5.5.1\pipeline\templates\LunaCompiler\Scripts\bin\Debug\UnityScriptsCompiler.pdb" ������ �����ϰ� �ֽ��ϴ�.
+  "C:\Users\pjh2455191\Documents\pa\5.5.1\pipeline\templates\LunaCompiler\Scripts\bin\Debug\UnityScriptsCompiler.pdb" ������ �����ϰ� �ֽ��ϴ�.
 
-  "C:\Users\pjh2455191\Documents\PlayableAds\5.5.1\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Bridge.dll" ������ �����ϰ� �ֽ��ϴ�.
+  "C:\Users\pjh2455191\Documents\pa\5.5.1\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Bridge.dll" ������ �����ϰ� �ֽ��ϴ�.
 
-  "C:\Users\pjh2455191\Documents\PlayableAds\5.5.1\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Bridge.Html5.dll" ������ �����ϰ� �ֽ��ϴ�.
+  "C:\Users\pjh2455191\Documents\pa\5.5.1\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Bridge.Html5.dll" ������ �����ϰ� �ֽ��ϴ�.
 
-  "C:\Users\pjh2455191\Documents\PlayableAds\5.5.1\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Bridge.WebGL.dll" ������ �����ϰ� �ֽ��ϴ�.
+  "C:\Users\pjh2455191\Documents\pa\5.5.1\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Bridge.WebGL.dll" ������ �����ϰ� �ֽ��ϴ�.
 
-  "C:\Users\pjh2455191\Documents\PlayableAds\5.5.1\pipeline\templates\LunaCompiler\Scripts\bin\Debug\DOTween.dll" ������ �����ϰ� �ֽ��ϴ�.
+  "C:\Users\pjh2455191\Documents\pa\5.5.1\pipeline\templates\LunaCompiler\Scripts\bin\Debug\DOTween.dll" ������ �����ϰ� �ֽ��ϴ�.
 
-  "C:\Users\pjh2455191\Documents\PlayableAds\5.5.1\pipeline\templates\LunaCompiler\Scripts\bin\Debug\JetBrains.dll" ������ �����ϰ� �ֽ��ϴ�.
+  "C:\Users\pjh2455191\Documents\pa\5.5.1\pipeline\templates\LunaCompiler\Scripts\bin\Debug\JetBrains.dll" ������ �����ϰ� �ֽ��ϴ�.
 
-  "C:\Users\pjh2455191\Documents\PlayableAds\5.5.1\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Newtonsoft.Json.dll" ������ �����ϰ� �ֽ��ϴ�.
+  "C:\Users\pjh2455191\Documents\pa\5.5.1\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Newtonsoft.Json.dll" ������ �����ϰ� �ֽ��ϴ�.
 
-  "C:\Users\pjh2455191\Documents\PlayableAds\5.5.1\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Retyped.Core.dll" ������ �����ϰ� �ֽ��ϴ�.
+  "C:\Users\pjh2455191\Documents\pa\5.5.1\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Retyped.Core.dll" ������ �����ϰ� �ֽ��ϴ�.
 
-  "C:\Users\pjh2455191\Documents\PlayableAds\5.5.1\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Retyped.dom.dll" ������ �����ϰ� �ֽ��ϴ�.
+  "C:\Users\pjh2455191\Documents\pa\5.5.1\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Retyped.dom.dll" ������ �����ϰ� �ֽ��ϴ�.
 
-  "C:\Users\pjh2455191\Documents\PlayableAds\5.5.1\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Retyped.es5.dll" ������ �����ϰ� �ֽ��ϴ�.
+  "C:\Users\pjh2455191\Documents\pa\5.5.1\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Retyped.es5.dll" ������ �����ϰ� �ֽ��ϴ�.
 
-  "C:\Users\pjh2455191\Documents\PlayableAds\5.5.1\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Retyped.scripthost.dll" ������ �����ϰ� �ֽ��ϴ�.
+  "C:\Users\pjh2455191\Documents\pa\5.5.1\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Retyped.scripthost.dll" ������ �����ϰ� �ֽ��ϴ�.
 
-  "C:\Users\pjh2455191\Documents\PlayableAds\5.5.1\pipeline\templates\LunaCompiler\Scripts\bin\Debug\spine-csharp.dll" ������ �����ϰ� �ֽ��ϴ�.
+  "C:\Users\pjh2455191\Documents\pa\5.5.1\pipeline\templates\LunaCompiler\Scripts\bin\Debug\spine-csharp.dll" ������ �����ϰ� �ֽ��ϴ�.
 
-  "C:\Users\pjh2455191\Documents\PlayableAds\5.5.1\pipeline\templates\LunaCompiler\Scripts\bin\Debug\TextMeshPro.dll" ������ �����ϰ� �ֽ��ϴ�.
+  "C:\Users\pjh2455191\Documents\pa\5.5.1\pipeline\templates\LunaCompiler\Scripts\bin\Debug\TextMeshPro.dll" ������ �����ϰ� �ֽ��ϴ�.
 
-  "C:\Users\pjh2455191\Documents\PlayableAds\5.5.1\pipeline\templates\LunaCompiler\Scripts\bin\Debug\UnityEngine.dll" ������ �����ϰ� �ֽ��ϴ�.
+  "C:\Users\pjh2455191\Documents\pa\5.5.1\pipeline\templates\LunaCompiler\Scripts\bin\Debug\UnityEngine.dll" ������ �����ϰ� �ֽ��ϴ�.
 
-  "C:\Users\pjh2455191\Documents\PlayableAds\5.5.1\pipeline\templates\LunaCompiler\Scripts\bin\Debug\UnityEngine.UI.dll" ������ �����ϰ� �ֽ��ϴ�.
+  "C:\Users\pjh2455191\Documents\pa\5.5.1\pipeline\templates\LunaCompiler\Scripts\bin\Debug\UnityEngine.UI.dll" ������ �����ϰ� �ֽ��ϴ�.
 
-  "C:\Users\pjh2455191\Documents\PlayableAds\5.5.1\pipeline\templates\LunaCompiler\Scripts\bin\Debug\UnityEngine.UniversalRenderPipeline.dll" ������ �����ϰ� �ֽ��ϴ�.
+  "C:\Users\pjh2455191\Documents\pa\5.5.1\pipeline\templates\LunaCompiler\Scripts\bin\Debug\UnityEngine.UniversalRenderPipeline.dll" ������ �����ϰ� �ֽ��ϴ�.
 
-  "C:\Users\pjh2455191\Documents\PlayableAds\5.5.1\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Bridge.xml" ������ �����ϰ� �ֽ��ϴ�.
+  "C:\Users\pjh2455191\Documents\pa\5.5.1\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Bridge.xml" ������ �����ϰ� �ֽ��ϴ�.
 
-  "C:\Users\pjh2455191\Documents\PlayableAds\5.5.1\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Bridge.Html5.xml" ������ �����ϰ� �ֽ��ϴ�.
+  "C:\Users\pjh2455191\Documents\pa\5.5.1\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Bridge.Html5.xml" ������ �����ϰ� �ֽ��ϴ�.
 
-  "C:\Users\pjh2455191\Documents\PlayableAds\5.5.1\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Bridge.WebGL.xml" ������ �����ϰ� �ֽ��ϴ�.
+  "C:\Users\pjh2455191\Documents\pa\5.5.1\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Bridge.WebGL.xml" ������ �����ϰ� �ֽ��ϴ�.
 
-  "C:\Users\pjh2455191\Documents\PlayableAds\5.5.1\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Newtonsoft.Json.xml" ������ �����ϰ� �ֽ��ϴ�.
+  "C:\Users\pjh2455191\Documents\pa\5.5.1\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Newtonsoft.Json.xml" ������ �����ϰ� �ֽ��ϴ�.
 
-  "C:\Users\pjh2455191\Documents\PlayableAds\5.5.1\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Retyped.Core.xml" ������ �����ϰ� �ֽ��ϴ�.
+  "C:\Users\pjh2455191\Documents\pa\5.5.1\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Retyped.Core.xml" ������ �����ϰ� �ֽ��ϴ�.
 
-  "C:\Users\pjh2455191\Documents\PlayableAds\5.5.1\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Retyped.dom.xml" ������ �����ϰ� �ֽ��ϴ�.
+  "C:\Users\pjh2455191\Documents\pa\5.5.1\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Retyped.dom.xml" ������ �����ϰ� �ֽ��ϴ�.
 
-  "C:\Users\pjh2455191\Documents\PlayableAds\5.5.1\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Retyped.es5.xml" ������ �����ϰ� �ֽ��ϴ�.
+  "C:\Users\pjh2455191\Documents\pa\5.5.1\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Retyped.es5.xml" ������ �����ϰ� �ֽ��ϴ�.
 
-  "C:\Users\pjh2455191\Documents\PlayableAds\5.5.1\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Retyped.scripthost.xml" ������ �����ϰ� �ֽ��ϴ�.
+  "C:\Users\pjh2455191\Documents\pa\5.5.1\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Retyped.scripthost.xml" ������ �����ϰ� �ֽ��ϴ�.
 
-  "C:\Users\pjh2455191\Documents\PlayableAds\5.5.1\pipeline\templates\LunaCompiler\Scripts\obj\Debug\Scripts.csproj.AssemblyReference.cache" ������ �����ϰ� �ֽ��ϴ�.
+  "C:\Users\pjh2455191\Documents\pa\5.5.1\pipeline\templates\LunaCompiler\Scripts\obj\Debug\Scripts.csproj.AssemblyReference.cache" ������ �����ϰ� �ֽ��ϴ�.
 
-  "C:\Users\pjh2455191\Documents\PlayableAds\5.5.1\pipeline\templates\LunaCompiler\Scripts\obj\Debug\Scripts.csproj.CoreCompileInputs.cache" ������ �����ϰ� �ֽ��ϴ�.
+  "C:\Users\pjh2455191\Documents\pa\5.5.1\pipeline\templates\LunaCompiler\Scripts\obj\Debug\Scripts.csproj.CoreCompileInputs.cache" ������ �����ϰ� �ֽ��ϴ�.
 
-  "C:\Users\pjh2455191\Documents\PlayableAds\5.5.1\pipeline\templates\LunaCompiler\Scripts\obj\Debug\Scripts.csproj.Up2Date" ������ �����ϰ� �ֽ��ϴ�.
+  "C:\Users\pjh2455191\Documents\pa\5.5.1\pipeline\templates\LunaCompiler\Scripts\obj\Debug\Scripts.csproj.Up2Date" ������ �����ϰ� �ֽ��ϴ�.
 
-  "C:\Users\pjh2455191\Documents\PlayableAds\5.5.1\pipeline\templates\LunaCompiler\Scripts\obj\Debug\UnityScriptsCompiler.dll" ������ �����ϰ� �ֽ��ϴ�.
+  "C:\Users\pjh2455191\Documents\pa\5.5.1\pipeline\templates\LunaCompiler\Scripts\obj\Debug\UnityScriptsCompiler.dll" ������ �����ϰ� �ֽ��ϴ�.
 
-  "C:\Users\pjh2455191\Documents\PlayableAds\5.5.1\pipeline\templates\LunaCompiler\Scripts\obj\Debug\UnityScriptsCompiler.pdb" ������ �����ϰ� �ֽ��ϴ�.
+  "C:\Users\pjh2455191\Documents\pa\5.5.1\pipeline\templates\LunaCompiler\Scripts\obj\Debug\UnityScriptsCompiler.pdb" ������ �����ϰ� �ֽ��ϴ�.
 
 GenerateTargetFrameworkMonikerAttribute:
 �ش� �Է� ���ϰ� ���Ͽ� ��� ������ ��� �ֽ� �����̹Ƿ� "GenerateTargetFrameworkMonikerAttribute" ����� �ǳʶݴϴ�.
 
 CoreCompile:
-  C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\Roslyn\csc.exe /noconfig /nowarn:CS0626,1701,1702 /fullpaths /nostdlib+ /errorreport:prompt /warn:4 /define:UNITY_LUNA;CSHARP_7_OR_LATER;CSHARP_7_3_OR_NEWER;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_2021;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_3_OR_NEWER;UNITY_2017_4_OR_NEWER;UNITY_2018_1_OR_NEWER;UNITY_2018_2_OR_NEWER;UNITY_2018_3_OR_NEWER;UNITY_2018_4_OR_NEWER;UNITY_2019_1_OR_NEWER;UNITY_2019_2_OR_NEWER;UNITY_2019_3_OR_NEWER;UNITY_2019_4_OR_NEWER;UNITY_2020_1_OR_NEWER;UNITY_2020_2_OR_NEWER;UNITY_2020_3_OR_NEWER;UNITY_2021_1_OR_NEWER;UNITY_2021_2_OR_NEWER;UNITY_2021_3_OR_NEWER;UNITY_2021_3;UNITY_2021_3_19 /highentropyva+ /reference:C:\Users\pjh2455191\Documents\PlayableAds\5.5.1\pipeline\templates\LunaCompiler\packages\Bridge.Core.17.9.40-luna\lib\net40\Bridge.dll /reference:C:\Users\pjh2455191\Documents\PlayableAds\5.5.1\pipeline\templates\LunaCompiler\packages\Bridge.Html5.17.9.0\lib\net40\Bridge.Html5.dll /reference:C:\Users\pjh2455191\Documents\PlayableAds\5.5.1\pipeline\templates\LunaCompiler\packages\Bridge.WebGL.1.22.0\lib\net40\Bridge.WebGL.dll /reference:C:\Users\pjh2455191\Documents\PlayableAds\5.5.1\pipeline\templates\LunaCompiler\packages\DOTween.1.2.705\lib\net40\DOTween.dll /reference:C:\Users\pjh2455191\Documents\PlayableAds\5.5.1\pipeline\templates\LunaCompiler\packages\com.unity.ide.rider\3.0.0\JetBrains.dll /reference:C:\Users\pjh2455191\Documents\PlayableAds\5.5.1\pipeline\templates\LunaCompiler\packages\Bridge.Newtonsoft.Json.1.16.0\lib\net40\Newtonsoft.Json.dll /reference:C:\Users\pjh2455191\Documents\PlayableAds\5.5.1\pipeline\templates\LunaCompiler\packages\Retyped.Core.1.6.6733\lib\net40\Retyped.Core.dll /reference:C:\Users\pjh2455191\Documents\PlayableAds\5.5.1\pipeline\templates\LunaCompiler\packages\Retyped.dom.2.8.6733\lib\net40\Retyped.dom.dll /reference:C:\Users\pjh2455191\Documents\PlayableAds\5.5.1\pipeline\templates\LunaCompiler\packages\Retyped.es5.2.8.6733\lib\net40\Retyped.es5.dll /reference:C:\Users\pjh2455191\Documents\PlayableAds\5.5.1\pipeline\templates\LunaCompiler\packages\Retyped.scripthost.2.8.6733\lib\net40\Retyped.scripthost.dll /reference:C:\Users\pjh2455191\Documents\PlayableAds\5.5.1\pipeline\templates\LunaCompiler\packages\com.esotericsoftware.spine.spine-csharp\4.1\spine-csharp.dll /reference:C:\Users\pjh2455191\Documents\PlayableAds\5.5.1\pipeline\templates\LunaCompiler\packages\com.unity.textmeshpro\3.0.6\TextMeshPro.dll /reference:C:\Users\pjh2455191\Documents\PlayableAds\5.5.1\pipeline\templates\LunaCompiler\Scripts\Vendor\UnityEngine.dll /reference:C:\Users\pjh2455191\Documents\PlayableAds\5.5.1\pipeline\templates\LunaCompiler\packages\com.unity.ui\1.2.1\UnityEngine.UI.dll /reference:C:\Users\pjh24
-55191\Documents\PlayableAds\5.5.1\pipeline\templates\LunaCompiler\packages\com.unity.urp\7.6\UnityEngine.UniversalRenderPipeline.dll /debug+ /debug:full /optimize- /out:obj\Debug\UnityScriptsCompiler.dll /subsystemversion:6.00 /target:library /warnaserror- /utf8output /langversion:8 C:\Users\pjh2455191\Documents\pa\Assets\endCard.cs C:\Users\pjh2455191\Documents\pa\Assets\enemy.cs C:\Users\pjh2455191\Documents\pa\Assets\gamemanager.cs C:\Users\pjh2455191\Documents\pa\Assets\player.cs C:\Users\pjh2455191\Documents\pa\Assets\screen.cs "C:\Users\pjh2455191\Documents\pa\Assets\Spine\Runtime\spine-unity\Asset Types\AnimationReferenceAsset.cs" "C:\Users\pjh2455191\Documents\pa\Assets\Spine\Runtime\spine-unity\Asset Types\AtlasAssetBase.cs" "C:\Users\pjh2455191\Documents\pa\Assets\Spine\Runtime\spine-unity\Asset Types\BlendModeMaterials.cs" "C:\Users\pjh2455191\Documents\pa\Assets\Spine\Runtime\spine-unity\Asset Types\EventDataReferenceAsset.cs" "C:\Users\pjh2455191\Documents\pa\Assets\Spine\Runtime\spine-unity\Asset Types\OnDemandTextureLoader.cs" "C:\Users\pjh2455191\Documents\pa\Assets\Spine\Runtime\spine-unity\Asset Types\RegionlessAttachmentLoader.cs" "C:\Users\pjh2455191\Documents\pa\Assets\Spine\Runtime\spine-unity\Asset Types\SkeletonDataAsset.cs" "C:\Users\pjh2455191\Documents\pa\Assets\Spine\Runtime\spine-unity\Asset Types\SkeletonDataCompatibility.cs" "C:\Users\pjh2455191\Documents\pa\Assets\Spine\Runtime\spine-unity\Asset Types\SkeletonDataModifierAsset.cs" "C:\Users\pjh2455191\Documents\pa\Assets\Spine\Runtime\spine-unity\Asset Types\SpineAtlasAsset.cs" "C:\Users\pjh2455191\Documents\pa\Assets\Spine\Runtime\spine-unity\Asset Types\SpineSpriteAtlasAsset.cs" C:\Users\pjh2455191\Documents\pa\Assets\Spine\Runtime\spine-unity\Components\EditorSkeletonPlayer.cs C:\Users\pjh2455191\Documents\pa\Assets\Spine\Runtime\spine-unity\Components\Following\BoneFollower.cs C:\Users\pjh2455191\Documents\pa\Assets\Spine\Runtime\spine-unity\Components\Following\BoneFollowerGraphic.cs C:\Users\pjh2455191\Documents\pa\Assets\Spine\Runtime\spine-unity\Components\Following\BoundingBoxFollower.cs C:\Users\pjh2455191\Documents\pa\Assets\Spine\Runtime\spine-unity\Components\Following\BoundingBoxFollowerGraphic.cs C:\Users\pjh2455191\Documents\pa\Assets\Spine\Runtime\spine-unity\Components\Following\PointFollower.cs C:\Users\pjh2455191\Documents\pa\Assets\Spine\Runtime\spine-unity\Components\Internal\SkeletonSubmeshGraphic.cs C:\Users\pjh2455191\Documents\pa\Assets\Spine\Runtime\spine-unity\Components\RootMotion\SkeletonMecanimRootMotion.cs C:\Users\pjh2455191\Documents\pa\Assets\Spine\Runtime\spine-unity\Components\RootMotion\SkeletonRootMotion.cs C:\Users\pjh2455191\Documents\pa\Assets\Spine\Runtime\spine-unity\Components\RootMotion\SkeletonRootMotionBase.cs C:\Users\pjh2455191\Documents\pa\Assets\Spine\Runtime\spine-unity\Components\SkeletonAnimation.cs C:\Users\pjh2455191\Documents\pa\Assets\Spine\Runtime\spine-unity\Components\SkeletonGraphic.cs C:\Users\pjh2455191\Documents\pa\Assets\Spine\Runtime\spine-unity\Components\SkeletonMecanim.cs C:\Users\pjh2455191\Documents\pa\Assets\Spine\Runtime\spine-unity\Components\SkeletonRenderer.cs C:\Users\pjh2455191\Documents\pa\Assets\Spine\Runtime\spine-unity\Components\SkeletonRendererCustomMaterials\SkeletonGraphicCustomMaterials.cs C:\Users\pjh2455191\Documents\pa\Assets\Spine\Runtime\spine-unity\Components\SkeletonRendererCustomMaterials\SkeletonRendererCustomMaterials.cs C:\Users\pjh2455191\Documents\pa\Assets\Spine\Runtime\spine-unity\Components\SkeletonRenderSeparator\SkeletonPartsRenderer.cs C:\Users\pjh2455191\Documents\pa\Assets\Spine\Runtime\spine-unity\Components\SkeletonRenderSeparator\SkeletonRenderSeparator.cs C:\Users\pjh2455191\Documents\pa\Assets\Spine\Runtime\spine-unity\Components\SkeletonUtility\ActivateBasedOnFlipDirection.cs C:\Users\pjh2455191\Documents\pa\Assets\Spine\Runtime\spine-unity\Components\SkeletonUtility\FollowLocationRigidbody.cs C:\Users\pjh2455191\Documents\pa\Assets\Spine\Runtime\spine-unity\Components\SkeletonUtility\FollowLocationRigidbody2D.cs C:\Users\pjh2455191\Documents\pa\Assets\Spine\Runtime\spine-unity\Components\SkeletonUtility\FollowSkeletonUtilityRootRotation.cs C:\Users\pjh2455191\Documents\pa\Assets\Spine\Runtime\spine-unity\Components\SkeletonUtility\SkeletonUtility.cs C:\Users\pjh2455191\Documents\pa\Assets\Spine\Runtime\spine-unity\Components\SkeletonUtility\SkeletonUtilityBone.cs C:\Users\pjh2455191\Documents\pa\Assets\Spine\Runtime\spine-unity\Components\SkeletonUtility\SkeletonUtilityConstraint.cs C:\Users\pjh2455191\Documents\pa\Assets\Spine\Runtime\spine-unity\ISkeletonAnimation.cs "C:\Users\pjh2455191\Documents\pa\Assets\Spine\Runtime\spine-unity\Mesh Generation\DoubleBuffered.cs" "C:\Users\pjh2455191\Documents\pa\Assets\Spine\Runtime\spine-unity\Mesh Generation\MeshGenerator.cs" "C:\Users\pjh2455191\Documents\pa\Assets\Spine\Runtime\spine-unity\Mesh Generation\MeshRendererBuffers.cs" "C:\Users\pjh2455191\Documents\pa\Assets\Spine\Runtime\spine-unity\Mesh Generation\SkeletonRendererInstruction.cs" "C:\Users\pjh2455191\Documents\pa\Assets\Spine\Runtime\spine-unity\Mesh Generation\SpineMesh.cs" C:\Users\pjh2455191\Documents\pa\Assets\Spine\Runtime\spine-unity\Modules\TK2D\SpriteCollectionAttachmentLoader.cs C:\Users\pjh2455191\Documents\pa\Assets\Spine\Runtime\spine-unity\SkeletonDataModifierAssets\BlendModeMaterials\BlendModeMaterialsAsset.cs C:\Users\pjh2455191\Documents\pa\Assets\Spine\Runtime\spine-unity\SpineAttributes.cs C:\Users\pjh2455191\Documents\pa\Assets\Spine\Runtime\spine-unity\Utility\AtlasUtilities.cs C:\Users\pjh2455191\Documents\pa\Assets\Spine\Runtime\spine-unity\Utility\AttachmentCloneExtensions.cs C:\Users\pjh2455191\Documents\pa\Assets\Spine\Runtime\spine-unity\Utility\AttachmentRegionExtensions.cs C:\Users\pjh2455191\Documents\pa\Assets\Spine\Runtime\spine-unity\Utility\BuildUtilities.cs C:\Users\pjh2455191\Documents\pa\Assets\Spine\Runtime\spine-unity\Utility\MaterialChecks.cs C:\Users\pjh2455191\Documents\pa\Assets\Spine\Runtime\spine-unity\Utility\MathUtilities.cs C:\Users\pjh2455191\Documents\pa\Assets\Spine\Runtime\spine-unity\Utility\SettingsTriState.cs C:\Users\pjh2455191\Documents\pa\Assets\Spine\Runtime\spine-unity\Utility\SkeletonExtensions.cs C:\Users\pjh2455191\Documents\pa\Assets\Spine\Runtime\spine-unity\Utility\TimelineExtensions.cs C:\Users\pjh2455191\Documents\pa\Assets\Spine\Runtime\spine-unity\Utility\YieldInstructions\WaitForSpineAnimation.cs C:\Users\pjh2455191\Documents\pa\Assets\Spine\Runtime\spine-unity\Utility\YieldInstructions\WaitForSpineAnimationComplete.cs C:\Users\pjh2455191\Documents\pa\Assets\Spine\Runtime\spine-unity\Utility\YieldInstructions\WaitForSpineAnimationEnd.cs C:\Users\pjh2455191\Documents\pa\Assets\Spine\Runtime\spine-unity\Utility\YieldInstructions\WaitForSpineEvent.cs C:\Users\pjh2455191\Documents\pa\Assets\Spine\Runtime\spine-unity\Utility\YieldInstructions\WaitForSpineTrackEntryEnd.cs C:\Users\pjh2455191\Documents\pa\Assets\test.cs Properties/AssemblyInfo.cs Sources/OtherDummyScript.cs "obj\Debug\.NETFramework,Version=v4.7.AssemblyAttributes.cs"
+  C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\Roslyn\csc.exe /noconfig /nowarn:CS0626,1701,1702 /fullpaths /nostdlib+ /errorreport:prompt /warn:4 /define:UNITY_LUNA;CSHARP_7_OR_LATER;CSHARP_7_3_OR_NEWER;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_2021;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_3_OR_NEWER;UNITY_2017_4_OR_NEWER;UNITY_2018_1_OR_NEWER;UNITY_2018_2_OR_NEWER;UNITY_2018_3_OR_NEWER;UNITY_2018_4_OR_NEWER;UNITY_2019_1_OR_NEWER;UNITY_2019_2_OR_NEWER;UNITY_2019_3_OR_NEWER;UNITY_2019_4_OR_NEWER;UNITY_2020_1_OR_NEWER;UNITY_2020_2_OR_NEWER;UNITY_2020_3_OR_NEWER;UNITY_2021_1_OR_NEWER;UNITY_2021_2_OR_NEWER;UNITY_2021_3_OR_NEWER;UNITY_2021_3;UNITY_2021_3_19 /highentropyva+ /reference:C:\Users\pjh2455191\Documents\pa\5.5.1\pipeline\templates\LunaCompiler\packages\Bridge.Core.17.9.40-luna\lib\net40\Bridge.dll /reference:C:\Users\pjh2455191\Documents\pa\5.5.1\pipeline\templates\LunaCompiler\packages\Bridge.Html5.17.9.0\lib\net40\Bridge.Html5.dll /reference:C:\Users\pjh2455191\Documents\pa\5.5.1\pipeline\templates\LunaCompiler\packages\Bridge.WebGL.1.22.0\lib\net40\Bridge.WebGL.dll /reference:C:\Users\pjh2455191\Documents\pa\5.5.1\pipeline\templates\LunaCompiler\packages\DOTween.1.2.705\lib\net40\DOTween.dll /reference:C:\Users\pjh2455191\Documents\pa\5.5.1\pipeline\templates\LunaCompiler\packages\com.unity.ide.rider\3.0.0\JetBrains.dll /reference:C:\Users\pjh2455191\Documents\pa\5.5.1\pipeline\templates\LunaCompiler\packages\Bridge.Newtonsoft.Json.1.16.0\lib\net40\Newtonsoft.Json.dll /reference:C:\Users\pjh2455191\Documents\pa\5.5.1\pipeline\templates\LunaCompiler\packages\Retyped.Core.1.6.6733\lib\net40\Retyped.Core.dll /reference:C:\Users\pjh2455191\Documents\pa\5.5.1\pipeline\templates\LunaCompiler\packages\Retyped.dom.2.8.6733\lib\net40\Retyped.dom.dll /reference:C:\Users\pjh2455191\Documents\pa\5.5.1\pipeline\templates\LunaCompiler\packages\Retyped.es5.2.8.6733\lib\net40\Retyped.es5.dll /reference:C:\Users\pjh2455191\Documents\pa\5.5.1\pipeline\templates\LunaCompiler\packages\Retyped.scripthost.2.8.6733\lib\net40\Retyped.scripthost.dll /reference:C:\Users\pjh2455191\Documents\pa\5.5.1\pipeline\templates\LunaCompiler\packages\com.esotericsoftware.spine.spine-csharp\4.1\spine-csharp.dll /reference:C:\Users\pjh2455191\Documents\pa\5.5.1\pipeline\templates\LunaCompiler\packages\com.unity.textmeshpro\3.0.6\TextMeshPro.dll /reference:C:\Users\pjh2455191\Documents\pa\5.5.1\pipeline\templates\LunaCompiler\Scripts\Vendor\UnityEngine.dll /reference:C:\Users\pjh2455191\Documents\pa\5.5.1\pipeline\templates\LunaCompiler\packages\com.unity.ui\1.2.1\UnityEngine.UI.dll /reference:C:\Users\pjh2455191\Documents\pa\5.5.1\pipeline\templates\LunaCompiler\packages\com.unity.urp\7.6\UnityEngine.UniversalRenderPipeline.dll /d
+ebug+ /debug:full /optimize- /out:obj\Debug\UnityScriptsCompiler.dll /subsystemversion:6.00 /target:library /warnaserror- /utf8output /langversion:8 C:\Users\pjh2455191\Documents\pa\Assets\endCard.cs C:\Users\pjh2455191\Documents\pa\Assets\enemy.cs C:\Users\pjh2455191\Documents\pa\Assets\gamemanager.cs C:\Users\pjh2455191\Documents\pa\Assets\player.cs C:\Users\pjh2455191\Documents\pa\Assets\screen.cs "C:\Users\pjh2455191\Documents\pa\Assets\Spine\Runtime\spine-unity\Asset Types\AnimationReferenceAsset.cs" "C:\Users\pjh2455191\Documents\pa\Assets\Spine\Runtime\spine-unity\Asset Types\AtlasAssetBase.cs" "C:\Users\pjh2455191\Documents\pa\Assets\Spine\Runtime\spine-unity\Asset Types\BlendModeMaterials.cs" "C:\Users\pjh2455191\Documents\pa\Assets\Spine\Runtime\spine-unity\Asset Types\EventDataReferenceAsset.cs" "C:\Users\pjh2455191\Documents\pa\Assets\Spine\Runtime\spine-unity\Asset Types\OnDemandTextureLoader.cs" "C:\Users\pjh2455191\Documents\pa\Assets\Spine\Runtime\spine-unity\Asset Types\RegionlessAttachmentLoader.cs" "C:\Users\pjh2455191\Documents\pa\Assets\Spine\Runtime\spine-unity\Asset Types\SkeletonDataAsset.cs" "C:\Users\pjh2455191\Documents\pa\Assets\Spine\Runtime\spine-unity\Asset Types\SkeletonDataCompatibility.cs" "C:\Users\pjh2455191\Documents\pa\Assets\Spine\Runtime\spine-unity\Asset Types\SkeletonDataModifierAsset.cs" "C:\Users\pjh2455191\Documents\pa\Assets\Spine\Runtime\spine-unity\Asset Types\SpineAtlasAsset.cs" "C:\Users\pjh2455191\Documents\pa\Assets\Spine\Runtime\spine-unity\Asset Types\SpineSpriteAtlasAsset.cs" C:\Users\pjh2455191\Documents\pa\Assets\Spine\Runtime\spine-unity\Components\EditorSkeletonPlayer.cs C:\Users\pjh2455191\Documents\pa\Assets\Spine\Runtime\spine-unity\Components\Following\BoneFollower.cs C:\Users\pjh2455191\Documents\pa\Assets\Spine\Runtime\spine-unity\Components\Following\BoneFollowerGraphic.cs C:\Users\pjh2455191\Documents\pa\Assets\Spine\Runtime\spine-unity\Components\Following\BoundingBoxFollower.cs C:\Users\pjh2455191\Documents\pa\Assets\Spine\Runtime\spine-unity\Components\Following\BoundingBoxFollowerGraphic.cs C:\Users\pjh2455191\Documents\pa\Assets\Spine\Runtime\spine-unity\Components\Following\PointFollower.cs C:\Users\pjh2455191\Documents\pa\Assets\Spine\Runtime\spine-unity\Components\Internal\SkeletonSubmeshGraphic.cs C:\Users\pjh2455191\Documents\pa\Assets\Spine\Runtime\spine-unity\Components\RootMotion\SkeletonMecanimRootMotion.cs C:\Users\pjh2455191\Documents\pa\Assets\Spine\Runtime\spine-unity\Components\RootMotion\SkeletonRootMotion.cs C:\Users\pjh2455191\Documents\pa\Assets\Spine\Runtime\spine-unity\Components\RootMotion\SkeletonRootMotionBase.cs C:\Users\pjh2455191\Documents\pa\Assets\Spine\Runtime\spine-unity\Components\SkeletonAnimation.cs C:\Users\pjh2455191\Documents\pa\Assets\Spine\Runtime\spine-unity\Components\SkeletonGraphic.cs C:\Users\pjh2455191\Documents\pa\Assets\Spine\Runtime\spine-unity\Components\SkeletonMecanim.cs C:\Users\pjh2455191\Documents\pa\Assets\Spine\Runtime\spine-unity\Components\SkeletonRenderer.cs C:\Users\pjh2455191\Documents\pa\Assets\Spine\Runtime\spine-unity\Components\SkeletonRendererCustomMaterials\SkeletonGraphicCustomMaterials.cs C:\Users\pjh2455191\Documents\pa\Assets\Spine\Runtime\spine-unity\Components\SkeletonRendererCustomMaterials\SkeletonRendererCustomMaterials.cs C:\Users\pjh2455191\Documents\pa\Assets\Spine\Runtime\spine-unity\Components\SkeletonRenderSeparator\SkeletonPartsRenderer.cs C:\Users\pjh2455191\Documents\pa\Assets\Spine\Runtime\spine-unity\Components\SkeletonRenderSeparator\SkeletonRenderSeparator.cs C:\Users\pjh2455191\Documents\pa\Assets\Spine\Runtime\spine-unity\Components\SkeletonUtility\ActivateBasedOnFlipDirection.cs C:\Users\pjh2455191\Documents\pa\Assets\Spine\Runtime\spine-unity\Components\SkeletonUtility\FollowLocationRigidbody.cs C:\Users\pjh2455191\Documents\pa\Assets\Spine\Runtime\spine-unity\Components\SkeletonUtility\FollowLocationRigidbody2D.cs C:\Users\pjh2455191\Documents\pa\Assets\Spine\Runtime\spine-unity\Components\SkeletonUtility\FollowSkeletonUtilityRootRotation.cs C:\Users\pjh2455191\Documents\pa\Assets\Spine\Runtime\spine-unity\Components\SkeletonUtility\SkeletonUtility.cs C:\Users\pjh2455191\Documents\pa\Assets\Spine\Runtime\spine-unity\Components\SkeletonUtility\SkeletonUtilityBone.cs C:\Users\pjh2455191\Documents\pa\Assets\Spine\Runtime\spine-unity\Components\SkeletonUtility\SkeletonUtilityConstraint.cs C:\Users\pjh2455191\Documents\pa\Assets\Spine\Runtime\spine-unity\ISkeletonAnimation.cs "C:\Users\pjh2455191\Documents\pa\Assets\Spine\Runtime\spine-unity\Mesh Generation\DoubleBuffered.cs" "C:\Users\pjh2455191\Documents\pa\Assets\Spine\Runtime\spine-unity\Mesh Generation\MeshGenerator.cs" "C:\Users\pjh2455191\Documents\pa\Assets\Spine\Runtime\spine-unity\Mesh Generation\MeshRendererBuffers.cs" "C:\Users\pjh2455191\Documents\pa\Assets\Spine\Runtime\spine-unity\Mesh Generation\SkeletonRendererInstruction.cs" "C:\Users\pjh2455191\Documents\pa\Assets\Spine\Runtime\spine-unity\Mesh Generation\SpineMesh.cs" C:\Users\pjh2455191\Documents\pa\Assets\Spine\Runtime\spine-unity\Modules\TK2D\SpriteCollectionAttachmentLoader.cs C:\Users\pjh2455191\Documents\pa\Assets\Spine\Runtime\spine-unity\SkeletonDataModifierAssets\BlendModeMaterials\BlendModeMaterialsAsset.cs C:\Users\pjh2455191\Documents\pa\Assets\Spine\Runtime\spine-unity\SpineAttributes.cs C:\Users\pjh2455191\Documents\pa\Assets\Spine\Runtime\spine-unity\Utility\AtlasUtilities.cs C:\Users\pjh2455191\Documents\pa\Assets\Spine\Runtime\spine-unity\Utility\AttachmentCloneExtensions.cs C:\Users\pjh2455191\Documents\pa\Assets\Spine\Runtime\spine-unity\Utility\AttachmentRegionExtensions.cs C:\Users\pjh2455191\Documents\pa\Assets\Spine\Runtime\spine-unity\Utility\BuildUtilities.cs C:\Users\pjh2455191\Documents\pa\Assets\Spine\Runtime\spine-unity\Utility\MaterialChecks.cs C:\Users\pjh2455191\Documents\pa\Assets\Spine\Runtime\spine-unity\Utility\MathUtilities.cs C:\Users\pjh2455191\Documents\pa\Assets\Spine\Runtime\spine-unity\Utility\SettingsTriState.cs C:\Users\pjh2455191\Documents\pa\Assets\Spine\Runtime\spine-unity\Utility\SkeletonExtensions.cs C:\Users\pjh2455191\Documents\pa\Assets\Spine\Runtime\spine-unity\Utility\TimelineExtensions.cs C:\Users\pjh2455191\Documents\pa\Assets\Spine\Runtime\spine-unity\Utility\YieldInstructions\WaitForSpineAnimation.cs C:\Users\pjh2455191\Documents\pa\Assets\Spine\Runtime\spine-unity\Utility\YieldInstructions\WaitForSpineAnimationComplete.cs C:\Users\pjh2455191\Documents\pa\Assets\Spine\Runtime\spine-unity\Utility\YieldInstructions\WaitForSpineAnimationEnd.cs C:\Users\pjh2455191\Documents\pa\Assets\Spine\Runtime\spine-unity\Utility\YieldInstructions\WaitForSpineEvent.cs C:\Users\pjh2455191\Documents\pa\Assets\Spine\Runtime\spine-unity\Utility\YieldInstructions\WaitForSpineTrackEntryEnd.cs C:\Users\pjh2455191\Documents\pa\Assets\test.cs Properties/AssemblyInfo.cs Sources/OtherDummyScript.cs "obj\Debug\.NETFramework,Version=v4.7.AssemblyAttributes.cs"
 
-  CompilerServer: server - server processed compilation - ec9a5281-5e92-4242-a137-8bb280d9992a
+C:\Users\pjh2455191\Documents\pa\Assets\gamemanager.cs(33,18): warning CS0414: 'gamemanager.curdmg' �ʵ尡 �Ҵ�Ǿ����� ������ �ʾҽ��ϴ�. [C:\Users\pjh2455191\Documents\pa\5.5.1\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+
+  CompilerServer: server - server processed compilation - 8814dd35-01aa-4da5-b3d7-e5b3ed64c99d
 
 _CopyFilesMarkedCopyLocal:
-  "C:\Users\pjh2455191\Documents\PlayableAds\5.5.1\pipeline\templates\LunaCompiler\packages\Bridge.WebGL.1.22.0\lib\net40\Bridge.WebGL.dll"���� "C:\Users\pjh2455191\Documents\PlayableAds\5.5.1\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Bridge.WebGL.dll"(��)�� ������ �����ϰ� �ֽ��ϴ�.
+  "C:\Users\pjh2455191\Documents\pa\5.5.1\pipeline\templates\LunaCompiler\packages\Bridge.Newtonsoft.Json.1.16.0\lib\net40\Newtonsoft.Json.dll"���� "C:\Users\pjh2455191\Documents\pa\5.5.1\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Newtonsoft.Json.dll"(��)�� ������ �����ϰ� �ֽ��ϴ�.
 
-  "C:\Users\pjh2455191\Documents\PlayableAds\5.5.1\pipeline\templates\LunaCompiler\packages\com.unity.ide.rider\3.0.0\JetBrains.dll"���� "C:\Users\pjh2455191\Documents\PlayableAds\5.5.1\pipeline\templates\LunaCompiler\Scripts\bin\Debug\JetBrains.dll"(��)�� ������ �����ϰ� �ֽ��ϴ�.
-  "C:\Users\pjh2455191\Documents\PlayableAds\5.5.1\pipeline\templates\LunaCompiler\packages\Bridge.Html5.17.9.0\lib\net40\Bridge.Html5.dll"���� "C:\Users\pjh2455191\Documents\PlayableAds\5.5.1\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Bridge.Html5.dll"(��)�� ������ �����ϰ� �ֽ��ϴ�.
+  "C:\Users\pjh2455191\Documents\pa\5.5.1\pipeline\templates\LunaCompiler\packages\Bridge.Html5.17.9.0\lib\net40\Bridge.Html5.dll"���� "C:\Users\pjh2455191\Documents\pa\5.5.1\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Bridge.Html5.dll"(��)�� ������ �����ϰ� �ֽ��ϴ�.
+  "C:\Users\pjh2455191\Documents\pa\5.5.1\pipeline\templates\LunaCompiler\packages\DOTween.1.2.705\lib\net40\DOTween.dll"���� "C:\Users\pjh2455191\Documents\pa\5.5.1\pipeline\templates\LunaCompiler\Scripts\bin\Debug\DOTween.dll"(��)�� ������ �����ϰ� �ֽ��ϴ�.
 
-  "C:\Users\pjh2455191\Documents\PlayableAds\5.5.1\pipeline\templates\LunaCompiler\packages\Bridge.Core.17.9.40-luna\lib\net40\Bridge.dll"���� "C:\Users\pjh2455191\Documents\PlayableAds\5.5.1\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Bridge.dll"(��)�� ������ �����ϰ� �ֽ��ϴ�.
+  "C:\Users\pjh2455191\Documents\pa\5.5.1\pipeline\templates\LunaCompiler\packages\Bridge.WebGL.1.22.0\lib\net40\Bridge.WebGL.dll"���� "C:\Users\pjh2455191\Documents\pa\5.5.1\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Bridge.WebGL.dll"(��)�� ������ �����ϰ� �ֽ��ϴ�.
 
-  "C:\Users\pjh2455191\Documents\PlayableAds\5.5.1\pipeline\templates\LunaCompiler\packages\Bridge.Newtonsoft.Json.1.16.0\lib\net40\Newtonsoft.Json.dll"���� "C:\Users\pjh2455191\Documents\PlayableAds\5.5.1\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Newtonsoft.Json.dll"(��)�� ������ �����ϰ� �ֽ��ϴ�.
+  "C:\Users\pjh2455191\Documents\pa\5.5.1\pipeline\templates\LunaCompiler\packages\Retyped.Core.1.6.6733\lib\net40\Retyped.Core.dll"���� "C:\Users\pjh2455191\Documents\pa\5.5.1\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Retyped.Core.dll"(��)�� ������ �����ϰ� �ֽ��ϴ�.
 
-  "C:\Users\pjh2455191\Documents\PlayableAds\5.5.1\pipeline\templates\LunaCompiler\packages\DOTween.1.2.705\lib\net40\DOTween.dll"���� "C:\Users\pjh2455191\Documents\PlayableAds\5.5.1\pipeline\templates\LunaCompiler\Scripts\bin\Debug\DOTween.dll"(��)�� ������ �����ϰ� �ֽ��ϴ�.
+  "C:\Users\pjh2455191\Documents\pa\5.5.1\pipeline\templates\LunaCompiler\packages\Bridge.Core.17.9.40-luna\lib\net40\Bridge.dll"���� "C:\Users\pjh2455191\Documents\pa\5.5.1\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Bridge.dll"(��)�� ������ �����ϰ� �ֽ��ϴ�.
+  "C:\Users\pjh2455191\Documents\pa\5.5.1\pipeline\templates\LunaCompiler\packages\Retyped.dom.2.8.6733\lib\net40\Retyped.dom.dll"���� "C:\Users\pjh2455191\Documents\pa\5.5.1\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Retyped.dom.dll"(��)�� ������ �����ϰ� �ֽ��ϴ�.
 
-  "C:\Users\pjh2455191\Documents\PlayableAds\5.5.1\pipeline\templates\LunaCompiler\packages\Retyped.dom.2.8.6733\lib\net40\Retyped.dom.dll"���� "C:\Users\pjh2455191\Documents\PlayableAds\5.5.1\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Retyped.dom.dll"(��)�� ������ �����ϰ� �ֽ��ϴ�.
+  "C:\Users\pjh2455191\Documents\pa\5.5.1\pipeline\templates\LunaCompiler\packages\Retyped.es5.2.8.6733\lib\net40\Retyped.es5.dll"���� "C:\Users\pjh2455191\Documents\pa\5.5.1\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Retyped.es5.dll"(��)�� ������ �����ϰ� �ֽ��ϴ�.
 
-  "C:\Users\pjh2455191\Documents\PlayableAds\5.5.1\pipeline\templates\LunaCompiler\packages\Retyped.Core.1.6.6733\lib\net40\Retyped.Core.dll"���� "C:\Users\pjh2455191\Documents\PlayableAds\5.5.1\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Retyped.Core.dll"(��)�� ������ �����ϰ� �ֽ��ϴ�.
+  "C:\Users\pjh2455191\Documents\pa\5.5.1\pipeline\templates\LunaCompiler\packages\Retyped.scripthost.2.8.6733\lib\net40\Retyped.scripthost.dll"���� "C:\Users\pjh2455191\Documents\pa\5.5.1\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Retyped.scripthost.dll"(��)�� ������ �����ϰ� �ֽ��ϴ�.
 
-  "C:\Users\pjh2455191\Documents\PlayableAds\5.5.1\pipeline\templates\LunaCompiler\packages\Retyped.es5.2.8.6733\lib\net40\Retyped.es5.dll"���� "C:\Users\pjh2455191\Documents\PlayableAds\5.5.1\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Retyped.es5.dll"(��)�� ������ �����ϰ� �ֽ��ϴ�.
+  "C:\Users\pjh2455191\Documents\pa\5.5.1\pipeline\templates\LunaCompiler\packages\com.esotericsoftware.spine.spine-csharp\4.1\spine-csharp.dll"���� "C:\Users\pjh2455191\Documents\pa\5.5.1\pipeline\templates\LunaCompiler\Scripts\bin\Debug\spine-csharp.dll"(��)�� ������ �����ϰ� �ֽ��ϴ�.
 
-  "C:\Users\pjh2455191\Documents\PlayableAds\5.5.1\pipeline\templates\LunaCompiler\packages\Retyped.scripthost.2.8.6733\lib\net40\Retyped.scripthost.dll"���� "C:\Users\pjh2455191\Documents\PlayableAds\5.5.1\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Retyped.scripthost.dll"(��)�� ������ �����ϰ� �ֽ��ϴ�.
+  "C:\Users\pjh2455191\Documents\pa\5.5.1\pipeline\templates\LunaCompiler\packages\com.unity.textmeshpro\3.0.6\TextMeshPro.dll"���� "C:\Users\pjh2455191\Documents\pa\5.5.1\pipeline\templates\LunaCompiler\Scripts\bin\Debug\TextMeshPro.dll"(��)�� ������ �����ϰ� �ֽ��ϴ�.
 
-  "C:\Users\pjh2455191\Documents\PlayableAds\5.5.1\pipeline\templates\LunaCompiler\packages\com.esotericsoftware.spine.spine-csharp\4.1\spine-csharp.dll"���� "C:\Users\pjh2455191\Documents\PlayableAds\5.5.1\pipeline\templates\LunaCompiler\Scripts\bin\Debug\spine-csharp.dll"(��)�� ������ �����ϰ� �ֽ��ϴ�.
+  "C:\Users\pjh2455191\Documents\pa\5.5.1\pipeline\templates\LunaCompiler\Scripts\Vendor\UnityEngine.dll"���� "C:\Users\pjh2455191\Documents\pa\5.5.1\pipeline\templates\LunaCompiler\Scripts\bin\Debug\UnityEngine.dll"(��)�� ������ �����ϰ� �ֽ��ϴ�.
 
-  "C:\Users\pjh2455191\Documents\PlayableAds\5.5.1\pipeline\templates\LunaCompiler\packages\com.unity.textmeshpro\3.0.6\TextMeshPro.dll"���� "C:\Users\pjh2455191\Documents\PlayableAds\5.5.1\pipeline\templates\LunaCompiler\Scripts\bin\Debug\TextMeshPro.dll"(��)�� ������ �����ϰ� �ֽ��ϴ�.
-  "C:\Users\pjh2455191\Documents\PlayableAds\5.5.1\pipeline\templates\LunaCompiler\Scripts\Vendor\UnityEngine.dll"���� "C:\Users\pjh2455191\Documents\PlayableAds\5.5.1\pipeline\templates\LunaCompiler\Scripts\bin\Debug\UnityEngine.dll"(��)�� ������ �����ϰ� �ֽ��ϴ�.
-  "C:\Users\pjh2455191\Documents\PlayableAds\5.5.1\pipeline\templates\LunaCompiler\packages\com.unity.ui\1.2.1\UnityEngine.UI.dll"���� "C:\Users\pjh2455191\Documents\PlayableAds\5.5.1\pipeline\templates\LunaCompiler\Scripts\bin\Debug\UnityEngine.UI.dll"(��)�� ������ �����ϰ� �ֽ��ϴ�.
+  "C:\Users\pjh2455191\Documents\pa\5.5.1\pipeline\templates\LunaCompiler\packages\com.unity.ui\1.2.1\UnityEngine.UI.dll"���� "C:\Users\pjh2455191\Documents\pa\5.5.1\pipeline\templates\LunaCompiler\Scripts\bin\Debug\UnityEngine.UI.dll"(��)�� ������ �����ϰ� �ֽ��ϴ�.
 
-  "C:\Users\pjh2455191\Documents\PlayableAds\5.5.1\pipeline\templates\LunaCompiler\packages\com.unity.urp\7.6\UnityEngine.UniversalRenderPipeline.dll"���� "C:\Users\pjh2455191\Documents\PlayableAds\5.5.1\pipeline\templates\LunaCompiler\Scripts\bin\Debug\UnityEngine.UniversalRenderPipeline.dll"(��)�� ������ �����ϰ� �ֽ��ϴ�.
+  "C:\Users\pjh2455191\Documents\pa\5.5.1\pipeline\templates\LunaCompiler\packages\com.unity.urp\7.6\UnityEngine.UniversalRenderPipeline.dll"���� "C:\Users\pjh2455191\Documents\pa\5.5.1\pipeline\templates\LunaCompiler\Scripts\bin\Debug\UnityEngine.UniversalRenderPipeline.dll"(��)�� ������ �����ϰ� �ֽ��ϴ�.
 
-  "C:\Users\pjh2455191\Documents\PlayableAds\5.5.1\pipeline\templates\LunaCompiler\packages\Bridge.Core.17.9.40-luna\lib\net40\Bridge.xml"���� "C:\Users\pjh2455191\Documents\PlayableAds\5.5.1\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Bridge.xml"(��)�� ������ �����ϰ� �ֽ��ϴ�.
+  "C:\Users\pjh2455191\Documents\pa\5.5.1\pipeline\templates\LunaCompiler\packages\com.unity.ide.rider\3.0.0\JetBrains.dll"���� "C:\Users\pjh2455191\Documents\pa\5.5.1\pipeline\templates\LunaCompiler\Scripts\bin\Debug\JetBrains.dll"(��)�� ������ �����ϰ� �ֽ��ϴ�.
 
-  "C:\Users\pjh2455191\Documents\PlayableAds\5.5.1\pipeline\templates\LunaCompiler\packages\Bridge.Html5.17.9.0\lib\net40\Bridge.Html5.xml"���� "C:\Users\pjh2455191\Documents\PlayableAds\5.5.1\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Bridge.Html5.xml"(��)�� ������ �����ϰ� �ֽ��ϴ�.
+  "C:\Users\pjh2455191\Documents\pa\5.5.1\pipeline\templates\LunaCompiler\packages\Bridge.Core.17.9.40-luna\lib\net40\Bridge.xml"���� "C:\Users\pjh2455191\Documents\pa\5.5.1\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Bridge.xml"(��)�� ������ �����ϰ� �ֽ��ϴ�.
 
-  "C:\Users\pjh2455191\Documents\PlayableAds\5.5.1\pipeline\templates\LunaCompiler\packages\Bridge.WebGL.1.22.0\lib\net40\Bridge.WebGL.xml"���� "C:\Users\pjh2455191\Documents\PlayableAds\5.5.1\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Bridge.WebGL.xml"(��)�� ������ �����ϰ� �ֽ��ϴ�.
+  "C:\Users\pjh2455191\Documents\pa\5.5.1\pipeline\templates\LunaCompiler\packages\Bridge.Html5.17.9.0\lib\net40\Bridge.Html5.xml"���� "C:\Users\pjh2455191\Documents\pa\5.5.1\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Bridge.Html5.xml"(��)�� ������ �����ϰ� �ֽ��ϴ�.
 
-  "C:\Users\pjh2455191\Documents\PlayableAds\5.5.1\pipeline\templates\LunaCompiler\packages\Bridge.Newtonsoft.Json.1.16.0\lib\net40\Newtonsoft.Json.xml"���� "C:\Users\pjh2455191\Documents\PlayableAds\5.5.1\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Newtonsoft.Json.xml"(��)�� ������ �����ϰ� �ֽ��ϴ�.
+  "C:\Users\pjh2455191\Documents\pa\5.5.1\pipeline\templates\LunaCompiler\packages\Bridge.WebGL.1.22.0\lib\net40\Bridge.WebGL.xml"���� "C:\Users\pjh2455191\Documents\pa\5.5.1\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Bridge.WebGL.xml"(��)�� ������ �����ϰ� �ֽ��ϴ�.
 
-  "C:\Users\pjh2455191\Documents\PlayableAds\5.5.1\pipeline\templates\LunaCompiler\packages\Retyped.Core.1.6.6733\lib\net40\Retyped.Core.xml"���� "C:\Users\pjh2455191\Documents\PlayableAds\5.5.1\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Retyped.Core.xml"(��)�� ������ �����ϰ� �ֽ��ϴ�.
+  "C:\Users\pjh2455191\Documents\pa\5.5.1\pipeline\templates\LunaCompiler\packages\Bridge.Newtonsoft.Json.1.16.0\lib\net40\Newtonsoft.Json.xml"���� "C:\Users\pjh2455191\Documents\pa\5.5.1\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Newtonsoft.Json.xml"(��)�� ������ �����ϰ� �ֽ��ϴ�.
 
-  "C:\Users\pjh2455191\Documents\PlayableAds\5.5.1\pipeline\templates\LunaCompiler\packages\Retyped.dom.2.8.6733\lib\net40\Retyped.dom.xml"���� "C:\Users\pjh2455191\Documents\PlayableAds\5.5.1\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Retyped.dom.xml"(��)�� ������ �����ϰ� �ֽ��ϴ�.
+  "C:\Users\pjh2455191\Documents\pa\5.5.1\pipeline\templates\LunaCompiler\packages\Retyped.Core.1.6.6733\lib\net40\Retyped.Core.xml"���� "C:\Users\pjh2455191\Documents\pa\5.5.1\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Retyped.Core.xml"(��)�� ������ �����ϰ� �ֽ��ϴ�.
 
-  "C:\Users\pjh2455191\Documents\PlayableAds\5.5.1\pipeline\templates\LunaCompiler\packages\Retyped.es5.2.8.6733\lib\net40\Retyped.es5.xml"���� "C:\Users\pjh2455191\Documents\PlayableAds\5.5.1\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Retyped.es5.xml"(��)�� ������ �����ϰ� �ֽ��ϴ�.
+  "C:\Users\pjh2455191\Documents\pa\5.5.1\pipeline\templates\LunaCompiler\packages\Retyped.dom.2.8.6733\lib\net40\Retyped.dom.xml"���� "C:\Users\pjh2455191\Documents\pa\5.5.1\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Retyped.dom.xml"(��)�� ������ �����ϰ� �ֽ��ϴ�.
 
-  "C:\Users\pjh2455191\Documents\PlayableAds\5.5.1\pipeline\templates\LunaCompiler\packages\Retyped.scripthost.2.8.6733\lib\net40\Retyped.scripthost.xml"���� "C:\Users\pjh2455191\Documents\PlayableAds\5.5.1\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Retyped.scripthost.xml"(��)�� ������ �����ϰ� �ֽ��ϴ�.
+  "C:\Users\pjh2455191\Documents\pa\5.5.1\pipeline\templates\LunaCompiler\packages\Retyped.es5.2.8.6733\lib\net40\Retyped.es5.xml"���� "C:\Users\pjh2455191\Documents\pa\5.5.1\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Retyped.es5.xml"(��)�� ������ �����ϰ� �ֽ��ϴ�.
+  "C:\Users\pjh2455191\Documents\pa\5.5.1\pipeline\templates\LunaCompiler\packages\Retyped.scripthost.2.8.6733\lib\net40\Retyped.scripthost.xml"���� "C:\Users\pjh2455191\Documents\pa\5.5.1\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Retyped.scripthost.xml"(��)�� ������ �����ϰ� �ֽ��ϴ�.
 
-  "AlwaysCreate"��(��) �����Ǿ��� ������ "C:\Users\pjh2455191\Documents\PlayableAds\5.5.1\pipeline\templates\LunaCompiler\Scripts\obj\Debug\Scripts.csproj.Up2Date"��(��) ����� �ֽ��ϴ�.
+  "AlwaysCreate"��(��) �����Ǿ��� ������ "C:\Users\pjh2455191\Documents\pa\5.5.1\pipeline\templates\LunaCompiler\Scripts\obj\Debug\Scripts.csproj.Up2Date"��(��) ����� �ֽ��ϴ�.
 
-  "C:\Users\pjh2455191\Documents\PlayableAds\5.5.1\pipeline\templates\LunaCompiler\Scripts\obj\Debug\Scripts.csproj.Up2Date"�� ����(touching)�ϰ� �ֽ��ϴ�.
+  "C:\Users\pjh2455191\Documents\pa\5.5.1\pipeline\templates\LunaCompiler\Scripts\obj\Debug\Scripts.csproj.Up2Date"�� ����(touching)�ϰ� �ֽ��ϴ�.
 
 CopyFilesToOutputDirectory:
-  "C:\Users\pjh2455191\Documents\PlayableAds\5.5.1\pipeline\templates\LunaCompiler\Scripts\obj\Debug\UnityScriptsCompiler.dll"���� "C:\Users\pjh2455191\Documents\PlayableAds\5.5.1\pipeline\templates\LunaCompiler\Scripts\bin\Debug\UnityScriptsCompiler.dll"(��)�� ������ �����ϰ� �ֽ��ϴ�.
+  "C:\Users\pjh2455191\Documents\pa\5.5.1\pipeline\templates\LunaCompiler\Scripts\obj\Debug\UnityScriptsCompiler.dll"���� "C:\Users\pjh2455191\Documents\pa\5.5.1\pipeline\templates\LunaCompiler\Scripts\bin\Debug\UnityScriptsCompiler.dll"(��)�� ������ �����ϰ� �ֽ��ϴ�.
 
-  Scripts -> C:\Users\pjh2455191\Documents\PlayableAds\5.5.1\pipeline\templates\LunaCompiler\Scripts\bin\Debug\UnityScriptsCompiler.dll
+  Scripts -> C:\Users\pjh2455191\Documents\pa\5.5.1\pipeline\templates\LunaCompiler\Scripts\bin\Debug\UnityScriptsCompiler.dll
 
-  "C:\Users\pjh2455191\Documents\PlayableAds\5.5.1\pipeline\templates\LunaCompiler\Scripts\obj\Debug\UnityScriptsCompiler.pdb"���� "C:\Users\pjh2455191\Documents\PlayableAds\5.5.1\pipeline\templates\LunaCompiler\Scripts\bin\Debug\UnityScriptsCompiler.pdb"(��)�� ������ �����ϰ� �ֽ��ϴ�.
+  "C:\Users\pjh2455191\Documents\pa\5.5.1\pipeline\templates\LunaCompiler\Scripts\obj\Debug\UnityScriptsCompiler.pdb"���� "C:\Users\pjh2455191\Documents\pa\5.5.1\pipeline\templates\LunaCompiler\Scripts\bin\Debug\UnityScriptsCompiler.pdb"(��)�� ������ �����ϰ� �ֽ��ϴ�.
 
 BridgeNetCompilerTask:
   Bridge started
@@ -153,19 +165,32 @@ BridgeNetCompilerTask:
 
   Bridge done
 
-"C:\Users\pjh2455191\Documents\PlayableAds\5.5.1\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj" ������Ʈ�� �����߽��ϴ�(Rebuild ���).
+"C:\Users\pjh2455191\Documents\pa\5.5.1\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj" ������Ʈ�� �����߽��ϴ�(Rebuild ���).
 
 
 �����߽��ϴ�.
 
-    ��� 0��
+
+
+"C:\Users\pjh2455191\Documents\pa\5.5.1\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj"(Rebuild ���)(1) ->
+(CoreCompile ���) -> 
+  C:\Users\pjh2455191\Documents\pa\Assets\gamemanager.cs(33,18): warning CS0414: 'gamemanager.curdmg' �ʵ尡 �Ҵ�Ǿ����� ������ �ʾҽ��ϴ�. [C:\Users\pjh2455191\Documents\pa\5.5.1\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+
+    ��� 1��
     ���� 0��
 
-��� �ð�: 00:00:05.69
+
+��� �ð�: 00:00:05.32
 
 Source code compiled successfully!
 Diagnostics gathered successfully
+report@code:build 7255.51
+report@diagnostics:verify 0.26
+report@diagnostics:upload 1566.31
+report@code:stage 5386.91
 [ Stage3 ] Code compiled and bundled successfully.
-[ Stage4 ] Target platform: playground
+report@code:bundle 14280.27
+report@package:stage 562.95
+[ Stage4 ] Target platform: develop
 [ Stage4 ] Package bundled successfully
-[ Stage4 ] Package uploaded successfully
+report@assets:stats 0.07
