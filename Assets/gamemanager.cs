@@ -189,7 +189,7 @@ public class gamemanager : MonoBehaviour
         {
             pets[tests[0].effectIndex].SetActive(true);
 
-            curEnemyHp -= enemyHpMax * 0.1f;
+            curEnemyHp -= enemyHpMax * 0.15f;
             
             if(curEnemyHp<=0)
                 catchCover.SetActive(true);

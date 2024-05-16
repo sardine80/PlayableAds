@@ -9794,11 +9794,11 @@ MonoBehaviour:
   playerHpbar: {fileID: 53357479}
   enemyHpBar: {fileID: 85378909}
   dmg: {fileID: 158191853}
-  enemyHpMax: 20000
+  enemyHpMax: 2000000
   hpMax: 30
   enemyPower: 1
   playerPower: 1
-  playerPowerMul: 10
+  playerPowerMul: 120
   attackSpeed: 1
   attackSpeedMul: 1.3
   endCover: {fileID: 1998038802}
