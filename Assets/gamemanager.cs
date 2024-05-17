@@ -58,6 +58,10 @@ public class gamemanager : MonoBehaviour
     private bool gameEnd;
     public GameObject displayer;
 
+    public RectTransform cardGrid;
+    public RectTransform finger;
+    private int tutoCount = 0;
+
     private void Awake()
     {
         gameEnd = false;
@@ -98,6 +102,17 @@ public class gamemanager : MonoBehaviour
             
             t[i].img.sprite = t[i].sprite;
         }
+
+        LayoutRebuilder.ForceRebuildLayoutImmediate(cardGrid);
+        finger.gameObject.SetActive(true);
+        for (int i = 0; i < t.Length; i++)
+        {
+            if (t[i].effectIndex < 6)
+            {
+                finger.position = t[i].GetComponent<RectTransform>().position;
+                break;
+            }
+        }
     }
 
     private void Update()
@@ -129,7 +144,27 @@ public class gamemanager : MonoBehaviour
         if (tests[0] == null)
         {
             tests[0] = t;
+
+            if (tutoCount == 0)
+            {
+                tutoCount++;
+                
+                for (int i = 0; i < this.t.Length; i++)
+                {
+                    if (this.t[i]!=t && this.t[i].effectIndex == t.effectIndex)
+                    {
+                        finger.position = this.t[i].GetComponent<RectTransform>().position;
+                        break;
+                    }
+                }
+            }
             return;
+        }
+
+        if (tutoCount == 1)
+        {
+            tutoCount++;
+            finger.gameObject.SetActive(false);
         }
 
         tests[1] = t;
@@ -147,6 +182,19 @@ public class gamemanager : MonoBehaviour
             tests[0] =tests[1] =  null;
             isCheck = false;
         }
+
+        if (tutoCount == 0)
+        {
+            finger.gameObject.SetActive(true);
+            for (int i = 0; i < t.Length; i++)
+            {
+                if (t[i].effectIndex < 6)
+                {
+                    finger.position = t[i].GetComponent<RectTransform>().position;
+                    break;
+                }
+            }
+        }
     }
 
     public void OnClickCatchBtn()
@@ -159,6 +207,11 @@ public class gamemanager : MonoBehaviour
     {
         if (tests[0].sprite != tests[1].sprite)
         {
+            if (tutoCount > 0)
+            {
+                tutoCount = 0;
+            }
+
             tests[0].setDisable();
             tests[1].setDisable();
             
@@ -169,6 +222,10 @@ public class gamemanager : MonoBehaviour
         tests[1].setClear();
         score++;
 
+        if (tutoCount > 0)
+        {
+            tutoCount = -1;
+        }
         if (tests[0].effectIndex>=6 && tests[0].effectIndex<=7)
         {
             //공격력
