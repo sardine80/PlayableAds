@@ -1,5 +1,1 @@
-<<<<<<<< HEAD:LunaTemp/stage2/assets/animation-clips/24496.json
-{"id":24496,"path":"Assets/Spine/Pet/Spine/fairy_Controller.controller","assetBundleId":-1,"data":["run_1",0,0,0.53329998254776,[["","UnityEngine.GameObject","dummy",[0,28],[]]],[],true,60,[0,0,0,0,0,0],0,null,[null,null]]}
-========
-{"id":24772,"path":"Assets/Spine/Pet/Spine/fairy_Controller.controller","assetBundleId":-1,"data":["run_1",0,0,0.53329998254776,[["","UnityEngine.GameObject","dummy",[0,28],[]]],[],true,60,[0,0,0,0,0,0],0,null,[null,null]]}
->>>>>>>> 022d62e (업뎃):LunaTemp/stage2/assets/animation-clips/24772.json
+{"id":24772,"path":"Assets/Spine/Villain/Skeleton/co-worker_type_Controller.controller","assetBundleId":-1,"data":["run_2",0,1,0.666700005531311,[["","UnityEngine.GameObject","dummy",[0,28],[]]],[],true,60,[0,0,0,0,0,0],0,null,[null,null]]}

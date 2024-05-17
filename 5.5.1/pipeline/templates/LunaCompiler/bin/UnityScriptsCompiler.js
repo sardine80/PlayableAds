@@ -1,5 +1,5 @@
 /**
- * @version 1.0.8902.25298
+ * @version 1.0.8903.19108
  * @copyright anton
  * @compiler Bridge.NET 17.9.40-luna
  */
@@ -721,7 +721,10 @@ Bridge.assembly("UnityScriptsCompiler", function ($asm, globals) {
             breadIndex_x: 0,
             breadIndex_y: 0,
             gameEnd: false,
-            displayer: null
+            displayer: null,
+            cardGrid: null,
+            finger: null,
+            tutoCount: 0
         },
         props: {
             CanClick: {
@@ -748,6 +751,7 @@ Bridge.assembly("UnityScriptsCompiler", function ($asm, globals) {
                 this.score = 0;
                 this.breadIndex_x = 0;
                 this.breadIndex_y = 0;
+                this.tutoCount = 0;
             }
         },
         methods: {
@@ -788,6 +792,15 @@ Bridge.assembly("UnityScriptsCompiler", function ($asm, globals) {
 
                     this.t[i2].img.sprite = this.t[i2].sprite;
                 }
+
+                UnityEngine.UI.LayoutRebuilder.ForceRebuildLayoutImmediate(this.cardGrid);
+                this.finger.gameObject.SetActive(true);
+                for (var i3 = 0; i3 < this.t.length; i3 = (i3 + 1) | 0) {
+                    if (this.t[i3].effectIndex < 6) {
+                        this.finger.position = this.t[i3].GetComponent(UnityEngine.RectTransform).position.$clone();
+                        break;
+                    }
+                }
             },
             /*gamemanager.Awake end.*/
 
@@ -816,7 +829,23 @@ Bridge.assembly("UnityScriptsCompiler", function ($asm, globals) {
 
                 if (UnityEngine.MonoBehaviour.op_Equality(this.tests[0], null)) {
                     this.tests[0] = t;
+
+                    if (this.tutoCount === 0) {
+                        this.tutoCount = (this.tutoCount + 1) | 0;
+
+                        for (var i = 0; i < this.t.length; i = (i + 1) | 0) {
+                            if (UnityEngine.MonoBehaviour.op_Inequality(this.t[i], t) && this.t[i].effectIndex === t.effectIndex) {
+                                this.finger.position = this.t[i].GetComponent(UnityEngine.RectTransform).position.$clone();
+                                break;
+                            }
+                        }
+                    }
                     return;
+                }
+
+                if (this.tutoCount === 1) {
+                    this.tutoCount = (this.tutoCount + 1) | 0;
+                    this.finger.gameObject.SetActive(false);
                 }
 
                 this.tests[1] = t;
@@ -833,6 +862,16 @@ Bridge.assembly("UnityScriptsCompiler", function ($asm, globals) {
                     this.tests[0] = ($t = null, this.tests[1] = $t, $t);
                     this.isCheck = false;
                 }
+
+                if (this.tutoCount === 0) {
+                    this.finger.gameObject.SetActive(true);
+                    for (var i = 0; i < this.t.length; i = (i + 1) | 0) {
+                        if (this.t[i].effectIndex < 6) {
+                            this.finger.position = this.t[i].GetComponent(UnityEngine.RectTransform).position.$clone();
+                            break;
+                        }
+                    }
+                }
             },
             /*gamemanager.EndProc end.*/
 
@@ -846,6 +885,10 @@ Bridge.assembly("UnityScriptsCompiler", function ($asm, globals) {
             /*gamemanager.Check start.*/
             Check: function () {
                 if (!Bridge.referenceEquals(this.tests[0].sprite, this.tests[1].sprite)) {
+                    if (this.tutoCount > 0) {
+                        this.tutoCount = 0;
+                    }
+
                     this.tests[0].setDisable();
                     this.tests[1].setDisable();
 
@@ -856,6 +899,9 @@ Bridge.assembly("UnityScriptsCompiler", function ($asm, globals) {
                 this.tests[1].setClear();
                 this.score = (this.score + 1) | 0;
 
+                if (this.tutoCount > 0) {
+                    this.tutoCount = -1;
+                }
                 if (this.tests[0].effectIndex >= 6 && this.tests[0].effectIndex <= 7) {
                     //공격력
                     this.breadIndex_x = (this.breadIndex_x + 1) | 0;
@@ -871,7 +917,7 @@ Bridge.assembly("UnityScriptsCompiler", function ($asm, globals) {
                 } else {
                     this.pets[this.tests[0].effectIndex].SetActive(true);
 
-                    this.curEnemyHp -= this.enemyHpMax * 0.1;
+                    this.curEnemyHp -= this.enemyHpMax * 0.15;
 
                     if (this.curEnemyHp <= 0) {
                         this.catchCover.SetActive(true);
@@ -17801,7 +17847,7 @@ Bridge.rValue(                        c).Initialize(false, quiet);
     /*enemy end.*/
 
     /*gamemanager start.*/
-    $m("gamemanager", function () { return {"att":1048577,"a":2,"m":[{"a":2,"isSynthetic":true,"n":".ctor","t":1,"sn":"ctor"},{"a":1,"n":"Awake","t":8,"sn":"Awake","rt":$n[0].Void},{"a":1,"n":"Check","t":8,"sn":"Check","rt":$n[0].Void},{"a":1,"n":"EndGame","t":8,"sn":"EndGame","rt":$n[0].Void},{"a":2,"n":"EndProc","t":8,"sn":"EndProc","rt":$n[0].Void},{"a":2,"n":"OnClickCatchBtn","t":8,"sn":"OnClickCatchBtn","rt":$n[0].Void},{"a":1,"n":"Update","t":8,"sn":"Update","rt":$n[0].Void},{"a":2,"n":"enemyAttack","t":8,"sn":"enemyAttack","rt":$n[0].Void},{"a":2,"n":"onClickTest","t":8,"pi":[{"n":"t","pt":test,"ps":0}],"sn":"onClickTest","rt":$n[0].Void,"p":[test]},{"a":2,"n":"playerAttack","t":8,"sn":"playerAttack","rt":$n[0].Void},{"a":2,"n":"CanClick","t":16,"rt":$n[0].Boolean,"g":{"a":2,"n":"get_CanClick","t":8,"rt":$n[0].Boolean,"fg":"CanClick","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},"fn":"CanClick"},{"a":2,"n":"ani","t":4,"rt":$n[1].Animator,"sn":"ani"},{"a":2,"n":"attackSpeed","t":4,"rt":$n[0].Single,"sn":"attackSpeed","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"a":2,"n":"attackSpeedMul","t":4,"rt":$n[0].Single,"sn":"attackSpeedMul","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"a":1,"n":"breadIndex_x","t":4,"rt":$n[0].Int32,"sn":"breadIndex_x","box":function ($v) { return Bridge.box($v, System.Int32);}},{"a":1,"n":"breadIndex_y","t":4,"rt":$n[0].Int32,"sn":"breadIndex_y","box":function ($v) { return Bridge.box($v, System.Int32);}},{"a":2,"n":"breads1","t":4,"rt":System.Array.type(UnityEngine.GameObject),"sn":"breads1"},{"a":2,"n":"breads2","t":4,"rt":System.Array.type(UnityEngine.GameObject),"sn":"breads2"},{"a":2,"n":"breads3","t":4,"rt":System.Array.type(UnityEngine.GameObject),"sn":"breads3"},{"a":2,"n":"capsule","t":4,"rt":$n[1].GameObject,"sn":"capsule"},{"a":2,"n":"capsuleMoveTime","t":4,"rt":$n[0].Single,"sn":"capsuleMoveTime","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"a":1,"n":"capsuleOriPos","t":4,"rt":$n[1].Vector3,"sn":"capsuleOriPos"},{"a":2,"n":"capsuleRotate","t":4,"rt":$n[0].Single,"sn":"capsuleRotate","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"a":2,"n":"capsuleTarget","t":4,"rt":$n[1].GameObject,"sn":"capsuleTarget"},{"a":2,"n":"catchCover","t":4,"rt":$n[1].GameObject,"sn":"catchCover"},{"a":1,"n":"curCapsuleMoveTime","t":4,"rt":$n[0].Single,"sn":"curCapsuleMoveTime","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"a":1,"n":"curEnemyHp","t":4,"rt":$n[0].Single,"sn":"curEnemyHp","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"a":1,"n":"curHp","t":4,"rt":$n[0].Single,"sn":"curHp","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"a":2,"n":"curPlayerPower","t":4,"rt":$n[0].Int64,"sn":"curPlayerPower"},{"a":1,"n":"curdmg","t":4,"rt":$n[0].Int64,"sn":"curdmg"},{"a":2,"n":"displayer","t":4,"rt":$n[1].GameObject,"sn":"displayer"},{"a":2,"n":"dmg","t":4,"rt":$n[2].Text,"sn":"dmg"},{"a":2,"n":"dmgAni","t":4,"rt":$n[1].Animator,"sn":"dmgAni"},{"a":2,"n":"endCover","t":4,"rt":endCard,"sn":"endCover"},{"a":2,"n":"enemyHpBar","t":4,"rt":$n[2].Slider,"sn":"enemyHpBar"},{"a":2,"n":"enemyHpMax","t":4,"rt":$n[0].Single,"sn":"enemyHpMax","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"a":2,"n":"enemyPower","t":4,"rt":$n[0].Single,"sn":"enemyPower","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"a":1,"n":"gameEnd","t":4,"rt":$n[0].Boolean,"sn":"gameEnd","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"a":2,"n":"hpMax","t":4,"rt":$n[0].Single,"sn":"hpMax","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"a":1,"n":"isCheck","t":4,"rt":$n[0].Boolean,"sn":"isCheck","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"a":2,"n":"pets","t":4,"rt":System.Array.type(UnityEngine.GameObject),"sn":"pets"},{"a":2,"n":"playerHpbar","t":4,"rt":$n[2].Slider,"sn":"playerHpbar"},{"a":2,"n":"playerPower","t":4,"rt":$n[0].Int32,"sn":"playerPower","box":function ($v) { return Bridge.box($v, System.Int32);}},{"a":2,"n":"playerPowerMul","t":4,"rt":$n[0].Int32,"sn":"playerPowerMul","box":function ($v) { return Bridge.box($v, System.Int32);}},{"a":1,"n":"score","t":4,"rt":$n[0].Int32,"sn":"score","box":function ($v) { return Bridge.box($v, System.Int32);}},{"a":2,"n":"sprites","t":4,"rt":System.Array.type(UnityEngine.Sprite),"sn":"sprites"},{"a":2,"n":"t","t":4,"rt":System.Array.type(test),"sn":"t"},{"a":2,"n":"tests","t":4,"rt":System.Array.type(test),"sn":"tests"}]}; }, $n);
+    $m("gamemanager", function () { return {"att":1048577,"a":2,"m":[{"a":2,"isSynthetic":true,"n":".ctor","t":1,"sn":"ctor"},{"a":1,"n":"Awake","t":8,"sn":"Awake","rt":$n[0].Void},{"a":1,"n":"Check","t":8,"sn":"Check","rt":$n[0].Void},{"a":1,"n":"EndGame","t":8,"sn":"EndGame","rt":$n[0].Void},{"a":2,"n":"EndProc","t":8,"sn":"EndProc","rt":$n[0].Void},{"a":2,"n":"OnClickCatchBtn","t":8,"sn":"OnClickCatchBtn","rt":$n[0].Void},{"a":1,"n":"Update","t":8,"sn":"Update","rt":$n[0].Void},{"a":2,"n":"enemyAttack","t":8,"sn":"enemyAttack","rt":$n[0].Void},{"a":2,"n":"onClickTest","t":8,"pi":[{"n":"t","pt":test,"ps":0}],"sn":"onClickTest","rt":$n[0].Void,"p":[test]},{"a":2,"n":"playerAttack","t":8,"sn":"playerAttack","rt":$n[0].Void},{"a":2,"n":"CanClick","t":16,"rt":$n[0].Boolean,"g":{"a":2,"n":"get_CanClick","t":8,"rt":$n[0].Boolean,"fg":"CanClick","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},"fn":"CanClick"},{"a":2,"n":"ani","t":4,"rt":$n[1].Animator,"sn":"ani"},{"a":2,"n":"attackSpeed","t":4,"rt":$n[0].Single,"sn":"attackSpeed","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"a":2,"n":"attackSpeedMul","t":4,"rt":$n[0].Single,"sn":"attackSpeedMul","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"a":1,"n":"breadIndex_x","t":4,"rt":$n[0].Int32,"sn":"breadIndex_x","box":function ($v) { return Bridge.box($v, System.Int32);}},{"a":1,"n":"breadIndex_y","t":4,"rt":$n[0].Int32,"sn":"breadIndex_y","box":function ($v) { return Bridge.box($v, System.Int32);}},{"a":2,"n":"breads1","t":4,"rt":System.Array.type(UnityEngine.GameObject),"sn":"breads1"},{"a":2,"n":"breads2","t":4,"rt":System.Array.type(UnityEngine.GameObject),"sn":"breads2"},{"a":2,"n":"breads3","t":4,"rt":System.Array.type(UnityEngine.GameObject),"sn":"breads3"},{"a":2,"n":"capsule","t":4,"rt":$n[1].GameObject,"sn":"capsule"},{"a":2,"n":"capsuleMoveTime","t":4,"rt":$n[0].Single,"sn":"capsuleMoveTime","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"a":1,"n":"capsuleOriPos","t":4,"rt":$n[1].Vector3,"sn":"capsuleOriPos"},{"a":2,"n":"capsuleRotate","t":4,"rt":$n[0].Single,"sn":"capsuleRotate","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"a":2,"n":"capsuleTarget","t":4,"rt":$n[1].GameObject,"sn":"capsuleTarget"},{"a":2,"n":"cardGrid","t":4,"rt":$n[1].RectTransform,"sn":"cardGrid"},{"a":2,"n":"catchCover","t":4,"rt":$n[1].GameObject,"sn":"catchCover"},{"a":1,"n":"curCapsuleMoveTime","t":4,"rt":$n[0].Single,"sn":"curCapsuleMoveTime","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"a":1,"n":"curEnemyHp","t":4,"rt":$n[0].Single,"sn":"curEnemyHp","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"a":1,"n":"curHp","t":4,"rt":$n[0].Single,"sn":"curHp","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"a":2,"n":"curPlayerPower","t":4,"rt":$n[0].Int64,"sn":"curPlayerPower"},{"a":1,"n":"curdmg","t":4,"rt":$n[0].Int64,"sn":"curdmg"},{"a":2,"n":"displayer","t":4,"rt":$n[1].GameObject,"sn":"displayer"},{"a":2,"n":"dmg","t":4,"rt":$n[2].Text,"sn":"dmg"},{"a":2,"n":"dmgAni","t":4,"rt":$n[1].Animator,"sn":"dmgAni"},{"a":2,"n":"endCover","t":4,"rt":endCard,"sn":"endCover"},{"a":2,"n":"enemyHpBar","t":4,"rt":$n[2].Slider,"sn":"enemyHpBar"},{"a":2,"n":"enemyHpMax","t":4,"rt":$n[0].Single,"sn":"enemyHpMax","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"a":2,"n":"enemyPower","t":4,"rt":$n[0].Single,"sn":"enemyPower","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"a":2,"n":"finger","t":4,"rt":$n[1].RectTransform,"sn":"finger"},{"a":1,"n":"gameEnd","t":4,"rt":$n[0].Boolean,"sn":"gameEnd","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"a":2,"n":"hpMax","t":4,"rt":$n[0].Single,"sn":"hpMax","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"a":1,"n":"isCheck","t":4,"rt":$n[0].Boolean,"sn":"isCheck","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"a":2,"n":"pets","t":4,"rt":System.Array.type(UnityEngine.GameObject),"sn":"pets"},{"a":2,"n":"playerHpbar","t":4,"rt":$n[2].Slider,"sn":"playerHpbar"},{"a":2,"n":"playerPower","t":4,"rt":$n[0].Int32,"sn":"playerPower","box":function ($v) { return Bridge.box($v, System.Int32);}},{"a":2,"n":"playerPowerMul","t":4,"rt":$n[0].Int32,"sn":"playerPowerMul","box":function ($v) { return Bridge.box($v, System.Int32);}},{"a":1,"n":"score","t":4,"rt":$n[0].Int32,"sn":"score","box":function ($v) { return Bridge.box($v, System.Int32);}},{"a":2,"n":"sprites","t":4,"rt":System.Array.type(UnityEngine.Sprite),"sn":"sprites"},{"a":2,"n":"t","t":4,"rt":System.Array.type(test),"sn":"t"},{"a":2,"n":"tests","t":4,"rt":System.Array.type(test),"sn":"tests"},{"a":1,"n":"tutoCount","t":4,"rt":$n[0].Int32,"sn":"tutoCount","box":function ($v) { return Bridge.box($v, System.Int32);}}]}; }, $n);
     /*gamemanager end.*/
 
     /*ButtonAnimationType start.*/

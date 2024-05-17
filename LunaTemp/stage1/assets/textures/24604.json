@@ -1,5 +1,1 @@
-<<<<<<< HEAD
-{"id":24604,"type":0,"path":"Assets\/Source\/Texture\/bread_1.png","assetBundleId":-1,"data":["bread_1",100,100,1,1,1,0,12,1,1,1]}
-=======
-{"id":24604,"type":0,"path":"Assets\/Spine\/Villain\/Texture\/co-worker_type_80.png","assetBundleId":-1,"data":["co-worker_type_80",512,512,1,1,1,0,12,0,0,1]}
->>>>>>> 022d62e (업뎃)
+{"id":24604,"type":0,"path":"Assets\/Spine\/Villain\/Texture\/co-worker_type_40.png","assetBundleId":-1,"data":["co-worker_type_40",512,512,1,1,1,0,12,0,0,1]}

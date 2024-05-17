@@ -1,5 +1,1 @@
-<<<<<<<< HEAD:LunaTemp/stage2/assets/meshes/24590.json
-{"id":24590,"path":"Assets/Spine/Pet/Pet_085_G.prefab","assetBundleId":-1,"data":["Skeleton Prefab Mesh \"Pet_085_G\"",true,247,[0.08945608,1.275291,0,1.455056,1.411391,0],[1,0,0,0,0,1,1,0,0,0],[0,4446],[[[4446,2160]]],[],[]]}
-========
-{"id":24866,"path":"Assets/Spine/Pet/Pet_085_G.prefab","assetBundleId":-1,"data":["Skeleton Prefab Mesh \"Pet_085_G\"",true,247,[0.08945608,1.275291,0,1.455056,1.411391,0],[1,0,0,0,0,1,1,0,0,0],[0,4446],[[[4446,2160]]],[],[]]}
->>>>>>>> 022d62e (업뎃):LunaTemp/stage2/assets/meshes/24866.json
+{"id":24866,"path":"Assets/Spine/Pet/Pet_034_A.prefab","assetBundleId":-1,"data":["Skeleton Prefab Mesh \"Pet_034_A\"",true,383,[-0.01141888,0.8336674,0,1.378478,1.388466,0],[1,0,0,0,0,1,1,0,0,0],[0,6894],[[[6894,3840]]],[],[]]}

@@ -1,5 +1,0 @@
-<<<<<<<< HEAD:LunaTemp/stage2/assets/animation-clips/24404.json
-{"id":24404,"path":"Assets/Spine/Villain/Skeleton/co-worker_type_Controller.controller","assetBundleId":-1,"data":["idle",0,1,0.833299994468689,[["","UnityEngine.GameObject","dummy",[0,28],[]]],[],true,60,[0,0,0,0,0,0],0,null,[null,null]]}
-========
-{"id":24680,"path":"Assets/Spine/Villain/Skeleton/co-worker_type_Controller.controller","assetBundleId":-1,"data":["idle",0,1,0.833299994468689,[["","UnityEngine.GameObject","dummy",[0,28],[]]],[],true,60,[0,0,0,0,0,0],0,null,[null,null]]}
->>>>>>>> 022d62e (업뎃):LunaTemp/stage2/assets/animation-clips/24680.json

@@ -1,5 +1,0 @@
-<<<<<<<< HEAD:LunaTemp/stage1/assets/animation-clips/23764.json
-{"id":23764,"path":"Assets\/Source\/Animation\/Pet3.anim","assetBundleId":-1,"data":["Pet3",0,0,0.5,[["","UnityEngine.Transform","m_LocalPosition.x",[0,-11,0,0,0,4,4,0.5,-4,0,0,0,4,4],[]],["","UnityEngine.Transform","m_LocalPosition.y",[0,6,0,0,0,4,4,0.5,6,0,0,0,4,4],[]],["","UnityEngine.Transform","m_LocalPosition.z",[0,0,0,0,0,4,4,0.5,0,0,0,0,4,4],[]]],[],1,60,[0,0,0,0,0,0],0,[],[[],[]]]}
-========
-{"id":24046,"path":"Assets\/Source\/Animation\/Pet3.anim","assetBundleId":-1,"data":["Pet3",0,0,0.5,[["","UnityEngine.Transform","m_LocalPosition.x",[0,-11,0,0,0,4,4,0.5,-4,0,0,0,4,4],[]],["","UnityEngine.Transform","m_LocalPosition.y",[0,6,0,0,0,4,4,0.5,6,0,0,0,4,4],[]],["","UnityEngine.Transform","m_LocalPosition.z",[0,0,0,0,0,4,4,0.5,0,0,0,0,4,4],[]]],[],1,60,[0,0,0,0,0,0],0,[],[[],[]]]}
->>>>>>>> 022d62e (업뎃):LunaTemp/stage1/assets/animation-clips/24046.json

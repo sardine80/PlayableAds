@@ -1,5 +1,0 @@
-<<<<<<<< HEAD:LunaTemp/stage2/assets/animation-clips/24568.json
-{"id":24568,"path":"Assets/Spine/Pet/Spine/carbuncle_Controller.controller","assetBundleId":-1,"data":["run_1",0,0,0.53329998254776,[["","UnityEngine.GameObject","dummy",[0,28],[]]],[],true,60,[0,0,0,0,0,0],0,null,[null,null]]}
-========
-{"id":24844,"path":"Assets/Spine/Pet/Spine/carbuncle_Controller.controller","assetBundleId":-1,"data":["run_1",0,0,0.53329998254776,[["","UnityEngine.GameObject","dummy",[0,28],[]]],[],true,60,[0,0,0,0,0,0],0,null,[null,null]]}
->>>>>>>> 022d62e (업뎃):LunaTemp/stage2/assets/animation-clips/24844.json

@@ -1,5 +1,0 @@
-<<<<<<<< HEAD:LunaTemp/stage1/assets/animation-clips/24432.json
-{"id":24432,"path":"Assets\/Spine\/Pet\/Spine\/pony_Controller.controller","assetBundleId":-1,"data":["run_1",0,1,1,[["","UnityEngine.GameObject","dummy",[0,0,0,0,0,0,0,1,0,0,0,0,0,0],[]]],[["attack",0,0,"",null,null,0.16666667163372]],1,60,[0,0,0,0,0,0],0,[],[[],[]]]}
-========
-{"id":24708,"path":"Assets\/Spine\/Pet\/Spine\/pony_Controller.controller","assetBundleId":-1,"data":["run_1",0,1,1,[["","UnityEngine.GameObject","dummy",[0,0,0,0,0,0,0,1,0,0,0,0,0,0],[]]],[["attack",0,0,"",null,null,0.16666667163372]],1,60,[0,0,0,0,0,0],0,[],[[],[]]]}
->>>>>>>> 022d62e (업뎃):LunaTemp/stage1/assets/animation-clips/24708.json
